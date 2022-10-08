@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="code_alasan_datang1" model="alasan.datang">
+			<field name="code">A01</field>
+			<field name="name">Nyeri Umum/banyak tempat</field>
+		</record>
+		<record id="code_alasan_datang2" model="alasan.datang">
+			<field name="code">A02</field>
+			<field name="name">Menggigil umum</field>
+		</record>
+		<record id="code_alasan_datang3" model="alasan.datang">
+			<field name="code">A03</field>
+			<field name="name">Demam umum</field>
+		</record>
+		<record id="code_alasan_datang4" model="alasan.datang">
+			<field name="code">A04</field>
+			<field name="name">Lemah/kelelahan umum</field>
+		</record>
+		<record id="code_alasan_datang5" model="alasan.datang">
+			<field name="code">A05</field>
+			<field name="name">merasa sakit umum</field>
+		</record>
+		<record id="code_alasan_datang6" model="alasan.datang">
+			<field name="code">A06</field>
+			<field name="name">Pingsan </field>
+		</record>
+		<record id="code_alasan_datang7" model="alasan.datang">
+			<field name="code">A07</field>
+			<field name="name">Koma</field>
+		</record>
+		<record id="code_alasan_datang8" model="alasan.datang">
+			<field name="code">A08</field>
+			<field name="name">Pembengkakan umum</field>
+		</record>
+		<record id="code_alasan_datang9" model="alasan.datang">
+			<field name="code">A09</field>
+			<field name="name">Masalah berkeringat</field>
+		</record>
+		<record id="code_alasan_datang10" model="alasan.datang">
+			<field name="code">A10</field>
+			<field name="name">Perdarahan umum</field>
+		</record>
+		<record id="code_alasan_datang11" model="alasan.datang">
+			<field name="code">A11</field>
+			<field name="name">Nyeri dada umum</field>
+		</record>
+		<record id="code_alasan_datang12" model="alasan.datang">
+			<field name="code">A13</field>
+			<field name="name">Khawatir/takut pengobatan medis</field>
+		</record>
+		<record id="code_alasan_datang13" model="alasan.datang">
+			<field name="code">A16</field>
+			<field name="name">Bayi rewel umum</field>
+		</record>
+		<record id="code_alasan_datang14" model="alasan.datang">
+			<field name="code">A18</field>
+			<field name="name">Kekhawatiran tentang penampilan</field>
+		</record>
+		<record id="code_alasan_datang15" model="alasan.datang">
+			<field name="code">A20</field>
+			<field name="name">Permintaan/diskusi  euthanasia</field>
+		</record>
+		<record id="code_alasan_datang16" model="alasan.datang">
+			<field name="code">A21</field>
+			<field name="name">Faktor resiko kegananasan</field>
+		</record>
+		<record id="code_alasan_datang17" model="alasan.datang">
+			<field name="code">A23</field>
+			<field name="name">Faktor Resiko</field>
+		</record>
+		<record id="code_alasan_datang18" model="alasan.datang">
+			<field name="code">A25</field>
+			<field name="name">Takut akan kematian/sekarat</field>
+		</record>
+		<record id="code_alasan_datang19" model="alasan.datang">
+			<field name="code">A26</field>
+			<field name="name">Takut kanker</field>
+		</record>
+		<record id="code_alasan_datang20" model="alasan.datang">
+			<field name="code">A27</field>
+			<field name="name">Takut penyakit lainnya</field>
+		</record>
+		<record id="code_alasan_datang21" model="alasan.datang">
+			<field name="code">A28</field>
+			<field name="name">Fungsi yang terbatas/disabilitas</field>
+		</record>
+		<record id="code_alasan_datang22" model="alasan.datang">
+			<field name="code">A29</field>
+			<field name="name">Simptom umum/keluhan lainnya</field>
+		</record>
+		<record id="code_alasan_datang23" model="alasan.datang">
+			<field name="code">B02</field>
+			<field name="name">Pembesaran/nyeri dari kelenjar limfe</field>
+		</record>
+		<record id="code_alasan_datang24" model="alasan.datang">
+			<field name="code">B04</field>
+			<field name="name">Gejala/keluhan darah</field>
+		</record>
+		<record id="code_alasan_datang25" model="alasan.datang">
+			<field name="code">B25</field>
+			<field name="name">Takut HIV/AIDS</field>
+		</record>
+		<record id="code_alasan_datang26" model="alasan.datang">
+			<field name="code">B26</field>
+			<field name="name">Takut Kanker darah/limfe</field>
+		</record>
+		<record id="code_alasan_datang27" model="alasan.datang">
+			<field name="code">B27</field>
+			<field name="name">Takut penyakit darah/limfe lainnya</field>
+		</record>
+		<record id="code_alasan_datang28" model="alasan.datang">
+			<field name="code">B28</field>
+			<field name="name">Fungsi terbatas/disability</field>
+		</record>
+		<record id="code_alasan_datang29" model="alasan.datang">
+			<field name="code">B29</field>
+			<field name="name">Simptom/keluhan limfe/imun lainnya</field>
+		</record>
+		<record id="code_alasan_datang30" model="alasan.datang">
+			<field name="code">D01</field>
+			<field name="name">Nyeri perut/kram umum</field>
+		</record>
+		<record id="code_alasan_datang31" model="alasan.datang">
+			<field name="code">D02</field>
+			<field name="name">Nyeri perut epigastric</field>
+		</record>
+		<record id="code_alasan_datang32" model="alasan.datang">
+			<field name="code">D03</field>
+			<field name="name">Panas Ulu hati / Heart Burn</field>
+		</record>
+		<record id="code_alasan_datang33" model="alasan.datang">
+			<field name="code">D04</field>
+			<field name="name">Nyeri rectum/anus</field>
+		</record>
+		<record id="code_alasan_datang34" model="alasan.datang">
+			<field name="code">D05</field>
+			<field name="name">Gatal di pantat/ Perianal</field>
+		</record>
+		<record id="code_alasan_datang35" model="alasan.datang">
+			<field name="code">D06</field>
+			<field name="name">Nyeri perut terlokalisir lainnya</field>
+		</record>
+		<record id="code_alasan_datang36" model="alasan.datang">
+			<field name="code">D07</field>
+			<field name="name">Dyspepsia/gangguan pencernaan</field>
+		</record>
+		<record id="code_alasan_datang37" model="alasan.datang">
+			<field name="code">D08</field>
+			<field name="name">Perut kembung/Gas/Belcing (sendawa)</field>
+		</record>
+		<record id="code_alasan_datang38" model="alasan.datang">
+			<field name="code">D09</field>
+			<field name="name">Mual</field>
+		</record>
+		<record id="code_alasan_datang39" model="alasan.datang">
+			<field name="code">D10</field>
+			<field name="name">Muntah</field>
+		</record>
+		<record id="code_alasan_datang40" model="alasan.datang">
+			<field name="code">D11</field>
+			<field name="name">Diare</field>
+		</record>
+		<record id="code_alasan_datang41" model="alasan.datang">
+			<field name="code">D12</field>
+			<field name="name">Konstipasi</field>
+		</record>
+		<record id="code_alasan_datang42" model="alasan.datang">
+			<field name="code">D13</field>
+			<field name="name">Kuning/ikterik</field>
+		</record>
+		<record id="code_alasan_datang43" model="alasan.datang">
+			<field name="code">D14</field>
+			<field name="name">Muntah darah</field>
+		</record>
+		<record id="code_alasan_datang44" model="alasan.datang">
+			<field name="code">D15</field>
+			<field name="name">Melena/berak darah hitam</field>
+		</record>
+		<record id="code_alasan_datang45" model="alasan.datang">
+			<field name="code">D16</field>
+			<field name="name">Pendarahan rectum</field>
+		</record>
+		<record id="code_alasan_datang46" model="alasan.datang">
+			<field name="code">D17</field>
+			<field name="name">Inkontinensia usus/bowl</field>
+		</record>
+		<record id="code_alasan_datang47" model="alasan.datang">
+			<field name="code">D18</field>
+			<field name="name">Perubahan feses</field>
+		</record>
+		<record id="code_alasan_datang48" model="alasan.datang">
+			<field name="code">D19</field>
+			<field name="name">Gejala/Keluhan gigi/gusi</field>
+		</record>
+		<record id="code_alasan_datang49" model="alasan.datang">
+			<field name="code">D20</field>
+			<field name="name">Simptom/keluhan muluit/lidah/bibir</field>
+		</record>
+		<record id="code_alasan_datang50" model="alasan.datang">
+			<field name="code">D21</field>
+			<field name="name">Masalah menelan</field>
+		</record>
+		<record id="code_alasan_datang51" model="alasan.datang">
+			<field name="code">D23</field>
+			<field name="name">Pembesaran hepar</field>
+		</record>
+		<record id="code_alasan_datang52" model="alasan.datang">
+			<field name="code">D24</field>
+			<field name="name">Masa di perut</field>
+		</record>
+		<record id="code_alasan_datang53" model="alasan.datang">
+			<field name="code">D25</field>
+			<field name="name">Distensi perut</field>
+		</record>
+		<record id="code_alasan_datang54" model="alasan.datang">
+			<field name="code">D26</field>
+			<field name="name">Takut kanker sistem pencernaan</field>
+		</record>
+		<record id="code_alasan_datang55" model="alasan.datang">
+			<field name="code">D27</field>
+			<field name="name">Takut penyakit pencernaan lainnya</field>
+		</record>
+		<record id="code_alasan_datang56" model="alasan.datang">
+			<field name="code">D28</field>
+			<field name="name">Keterbatasan fungsi/disbility</field>
+		</record>
+		<record id="code_alasan_datang57" model="alasan.datang">
+			<field name="code">D29</field>
+			<field name="name">Gejala./keluhan pencernaan lainnya</field>
+		</record>
+		<record id="code_alasan_datang58" model="alasan.datang">
+			<field name="code">F01</field>
+			<field name="name">Mata nyeri</field>
+		</record>
+		<record id="code_alasan_datang59" model="alasan.datang">
+			<field name="code">F02</field>
+			<field name="name">Mata merah</field>
+		</record>
+		<record id="code_alasan_datang60" model="alasan.datang">
+			<field name="code">F03</field>
+			<field name="name">mata belekan</field>
+		</record>
+		<record id="code_alasan_datang61" model="alasan.datang">
+			<field name="code">F04</field>
+			<field name="name">Visual flloaters /Spots mata</field>
+		</record>
+		<record id="code_alasan_datang62" model="alasan.datang">
+			<field name="code">F05</field>
+			<field name="name">Gangguan mata / penglihatan lainnya</field>
+		</record>
+		<record id="code_alasan_datang63" model="alasan.datang">
+			<field name="code">F13</field>
+			<field name="name">Sensasi mata abnormal</field>
+		</record>
+		<record id="code_alasan_datang64" model="alasan.datang">
+			<field name="code">F14</field>
+			<field name="name">Gerakan mata abnormal</field>
+		</record>
+		<record id="code_alasan_datang65" model="alasan.datang">
+			<field name="code">F15</field>
+			<field name="name">Penampakan / mata abnormal</field>
+		</record>
+		<record id="code_alasan_datang66" model="alasan.datang">
+			<field name="code">F16</field>
+			<field name="name">Gejala/keluhan kelopak mata</field>
+		</record>
+		<record id="code_alasan_datang67" model="alasan.datang">
+			<field name="code">F17</field>
+			<field name="name">Gejala/keluhan kaca mata</field>
+		</record>
+		<record id="code_alasan_datang68" model="alasan.datang">
+			<field name="code">F18</field>
+			<field name="name">Gejala/keluhan lensa kontak</field>
+		</record>
+		<record id="code_alasan_datang69" model="alasan.datang">
+			<field name="code">F27</field>
+			<field name="name">Takut penyakit mata</field>
+		</record>
+		<record id="code_alasan_datang70" model="alasan.datang">
+			<field name="code">F28</field>
+			<field name="name">Keterbatasan fungsi/ disability penglihatan</field>
+		</record>
+		<record id="code_alasan_datang71" model="alasan.datang">
+			<field name="code">F29</field>
+			<field name="name">Keterbatasan fungsi/ disability penglihatan</field>
+		</record>
+		<record id="code_alasan_datang72" model="alasan.datang">
+			<field name="code">H01</field>
+			<field name="name">Nyeri telinga</field>
+		</record>
+		<record id="code_alasan_datang73" model="alasan.datang">
+			<field name="code">H02</field>
+			<field name="name">keluhan pendengaran telinga</field>
+		</record>
+		<record id="code_alasan_datang74" model="alasan.datang">
+			<field name="code">H03</field>
+			<field name="name">tinitus, telinga berdenging</field>
+		</record>
+		<record id="code_alasan_datang75" model="alasan.datang">
+			<field name="code">H04</field>
+			<field name="name">keluar cairan dari Telinga </field>
+		</record>
+		<record id="code_alasan_datang76" model="alasan.datang">
+			<field name="code">H05</field>
+			<field name="name">telinga berdarah</field>
+		</record>
+		<record id="code_alasan_datang77" model="alasan.datang">
+			<field name="code">H13</field>
+			<field name="name">telinga terasa tertutup</field>
+		</record>
+		<record id="code_alasan_datang78" model="alasan.datang">
+			<field name="code">H15</field>
+			<field name="name">Prihatin dengan penampilan telinga</field>
+		</record>
+		<record id="code_alasan_datang79" model="alasan.datang">
+			<field name="code">H27</field>
+			<field name="name">Takut penyakit telinga</field>
+		</record>
+		<record id="code_alasan_datang80" model="alasan.datang">
+			<field name="code">H28</field>
+			<field name="name">keterbatasan fungsi (disabilitas telinga)</field>
+		</record>
+		<record id="code_alasan_datang81" model="alasan.datang">
+			<field name="code">H29</field>
+			<field name="name">keluhan/.gejala telinga lainnya</field>
+		</record>
+		<record id="code_alasan_datang82" model="alasan.datang">
+			<field name="code">K01</field>
+			<field name="name">Nyeri jantung</field>
+		</record>
+		<record id="code_alasan_datang83" model="alasan.datang">
+			<field name="code">K02</field>
+			<field name="name">Tekanan atau kencang pada jantung</field>
+		</record>
+		<record id="code_alasan_datang84" model="alasan.datang">
+			<field name="code">K03</field>
+			<field name="name">Nyeri kardivascular NOS / jantung</field>
+		</record>
+		<record id="code_alasan_datang85" model="alasan.datang">
+			<field name="code">K04</field>
+			<field name="name">Palpitasi / detak jantung meningkat</field>
+		</record>
+		<record id="code_alasan_datang86" model="alasan.datang">
+			<field name="code">K05</field>
+			<field name="name">Detak jantung irreguler lainnya</field>
+		</record>
+		<record id="code_alasan_datang87" model="alasan.datang">
+			<field name="code">K06</field>
+			<field name="name">Penonjolan vena</field>
+		</record>
+		<record id="code_alasan_datang88" model="alasan.datang">
+			<field name="code">K07</field>
+			<field name="name">pembengkakan engkel kaki / oedem</field>
+		</record>
+		<record id="code_alasan_datang89" model="alasan.datang">
+			<field name="code">K22</field>
+			<field name="name">Faktor resiko penyakit jantung  kardiovaskuler</field>
+		</record>
+		<record id="code_alasan_datang90" model="alasan.datang">
+			<field name="code">K24</field>
+			<field name="name">Takut penyakit jantung</field>
+		</record>
+		<record id="code_alasan_datang91" model="alasan.datang">
+			<field name="code">K25</field>
+			<field name="name">Takut hypertensi</field>
+		</record>
+		<record id="code_alasan_datang92" model="alasan.datang">
+			<field name="code">K27</field>
+			<field name="name">Takut penyakit jantung kardiovaskuler  lainnya</field>
+		</record>
+		<record id="code_alasan_datang93" model="alasan.datang">
+			<field name="code">K28</field>
+			<field name="name">Keterbatasan fungsi jantung  / disability kardiovaskuler</field>
+		</record>
+		<record id="code_alasan_datang94" model="alasan.datang">
+			<field name="code">K29</field>
+			<field name="name">Gejala / keluhan jantung kardiovaskuler lainnya</field>
+		</record>
+		<record id="code_alasan_datang95" model="alasan.datang">
+			<field name="code">L01</field>
+			<field name="name">Gejala / keluhan leher</field>
+		</record>
+		<record id="code_alasan_datang96" model="alasan.datang">
+			<field name="code">L02</field>
+			<field name="name">Gejala / keluhan punggung</field>
+		</record>
+		<record id="code_alasan_datang97" model="alasan.datang">
+			<field name="code">L03</field>
+			<field name="name">Gejala / keluhan punggung bawah</field>
+		</record>
+		<record id="code_alasan_datang98" model="alasan.datang">
+			<field name="code">L04</field>
+			<field name="name">Gejala / keluhan dada</field>
+		</record>
+		<record id="code_alasan_datang99" model="alasan.datang">
+			<field name="code">L05</field>
+			<field name="name">Gejala / keluhan ketiak / flank / axilla</field>
+		</record>
+		<record id="code_alasan_datang100" model="alasan.datang">
+			<field name="code">L07</field>
+			<field name="name">Gejala / keluhan rahang / jaw</field>
+		</record>
+		<record id="code_alasan_datang101" model="alasan.datang">
+			<field name="code">L08</field>
+			<field name="name">Gejala / keluhan bahu</field>
+		</record>
+		<record id="code_alasan_datang102" model="alasan.datang">
+			<field name="code">L09</field>
+			<field name="name">Gejala / keluhan lengan</field>
+		</record>
+		<record id="code_alasan_datang103" model="alasan.datang">
+			<field name="code">L10</field>
+			<field name="name">Gejala / keluhan siku</field>
+		</record>
+		<record id="code_alasan_datang104" model="alasan.datang">
+			<field name="code">L11</field>
+			<field name="name">Gejala / keluhan pergelangan tangan</field>
+		</record>
+		<record id="code_alasan_datang105" model="alasan.datang">
+			<field name="code">L12</field>
+			<field name="name">Gejala / keluhan tangan / jari</field>
+		</record>
+		<record id="code_alasan_datang106" model="alasan.datang">
+			<field name="code">L13</field>
+			<field name="name">Gejala / keluhan panggul</field>
+		</record>
+		<record id="code_alasan_datang107" model="alasan.datang">
+			<field name="code">L14</field>
+			<field name="name">Gejala / keluhan kaki/paha</field>
+		</record>
+		<record id="code_alasan_datang108" model="alasan.datang">
+			<field name="code">L15</field>
+			<field name="name">Gejala / keluhan lutut </field>
+		</record>
+		<record id="code_alasan_datang109" model="alasan.datang">
+			<field name="code">L16</field>
+			<field name="name">Gejala / keluhan pergelangan kaki / engkel</field>
+		</record>
+		<record id="code_alasan_datang110" model="alasan.datang">
+			<field name="code">L17</field>
+			<field name="name">Gejala / keluhan telapak kaki/jari</field>
+		</record>
+		<record id="code_alasan_datang111" model="alasan.datang">
+			<field name="code">L18</field>
+			<field name="name">Nyeri otot</field>
+		</record>
+		<record id="code_alasan_datang112" model="alasan.datang">
+			<field name="code">L19</field>
+			<field name="name">Gejala / keluhan otot NOS</field>
+		</record>
+		<record id="code_alasan_datang113" model="alasan.datang">
+			<field name="code">L20</field>
+			<field name="name">Gejala / keluhan sendi NOS</field>
+		</record>
+		<record id="code_alasan_datang114" model="alasan.datang">
+			<field name="code">L26</field>
+			<field name="name">Takut kanker muskoloskeletal</field>
+		</record>
+		<record id="code_alasan_datang115" model="alasan.datang">
+			<field name="code">L27</field>
+			<field name="name">Takut penyakit muskoloskeletal lainnya</field>
+		</record>
+		<record id="code_alasan_datang116" model="alasan.datang">
+			<field name="code">L28</field>
+			<field name="name">Keterbatasan fungsi / disability muskoloskeletal</field>
+		</record>
+		<record id="code_alasan_datang117" model="alasan.datang">
+			<field name="code">L29</field>
+			<field name="name">Gejala / Keluhan muskoloskeletal lainnya</field>
+		</record>
+		<record id="code_alasan_datang118" model="alasan.datang">
+			<field name="code">N01</field>
+			<field name="name">Headache / sakit kepala</field>
+		</record>
+		<record id="code_alasan_datang119" model="alasan.datang">
+			<field name="code">N03</field>
+			<field name="name">Nyeri di wajah</field>
+		</record>
+		<record id="code_alasan_datang120" model="alasan.datang">
+			<field name="code">N04</field>
+			<field name="name">Restless legs</field>
+		</record>
+		<record id="code_alasan_datang121" model="alasan.datang">
+			<field name="code">N05</field>
+			<field name="name">Kesemutan pada jari-jari kaki </field>
+		</record>
+		<record id="code_alasan_datang122" model="alasan.datang">
+			<field name="code">N06</field>
+			<field name="name">Gangguan sensasi / disturban sensation lainnya</field>
+		</record>
+		<record id="code_alasan_datang123" model="alasan.datang">
+			<field name="code">N07</field>
+			<field name="name">Kejang</field>
+		</record>
+		<record id="code_alasan_datang124" model="alasan.datang">
+			<field name="code">N08</field>
+			<field name="name">Gerakan tidak disengaja abnormal</field>
+		</record>
+		<record id="code_alasan_datang125" model="alasan.datang">
+			<field name="code">N16</field>
+			<field name="name">Gangguan pembau / rasa</field>
+		</record>
+		<record id="code_alasan_datang126" model="alasan.datang">
+			<field name="code">N17</field>
+			<field name="name">Vertigo / pusing</field>
+		</record>
+		<record id="code_alasan_datang127" model="alasan.datang">
+			<field name="code">N18</field>
+			<field name="name">Kelemahan / paralisis</field>
+		</record>
+		<record id="code_alasan_datang128" model="alasan.datang">
+			<field name="code">N19</field>
+			<field name="name">Gangguan bicara</field>
+		</record>
+		<record id="code_alasan_datang129" model="alasan.datang">
+			<field name="code">N26</field>
+			<field name="name">Takut kanker sistem syaraf</field>
+		</record>
+		<record id="code_alasan_datang130" model="alasan.datang">
+			<field name="code">N27 </field>
+			<field name="name">Takut penyakit syaraf lainnya</field>
+		</record>
+		<record id="code_alasan_datang131" model="alasan.datang">
+			<field name="code">N28</field>
+			<field name="name">Keterbatasan fungsi / disability penyakit syaraf</field>
+		</record>
+		<record id="code_alasan_datang132" model="alasan.datang">
+			<field name="code">N29</field>
+			<field name="name">Gejala / keluhan syaraf lainnya</field>
+		</record>
+		<record id="code_alasan_datang133" model="alasan.datang">
+			<field name="code">P01</field>
+			<field name="name">Merasa cemas / gugup / tegang</field>
+		</record>
+		<record id="code_alasan_datang134" model="alasan.datang">
+			<field name="code">P02</field>
+			<field name="name">Reaksi stres akut</field>
+		</record>
+		<record id="code_alasan_datang135" model="alasan.datang">
+			<field name="code">P03</field>
+			<field name="name">Merasa depresi</field>
+		</record>
+		<record id="code_alasan_datang136" model="alasan.datang">
+			<field name="code">P04</field>
+			<field name="name">Merasa / bersikap mudah tersinggung / marah</field>
+		</record>
+		<record id="code_alasan_datang137" model="alasan.datang">
+			<field name="code">P05</field>
+			<field name="name">Penuaan, merasa / berprilaku tua</field>
+		</record>
+		<record id="code_alasan_datang138" model="alasan.datang">
+			<field name="code">P06 </field>
+			<field name="name">Gangguan tidur</field>
+		</record>
+		<record id="code_alasan_datang139" model="alasan.datang">
+			<field name="code">P07</field>
+			<field name="name">Hasrat seksual menurun</field>
+		</record>
+		<record id="code_alasan_datang140" model="alasan.datang">
+			<field name="code">P08</field>
+			<field name="name">Pemenuhan seksual menurun</field>
+		</record>
+		<record id="code_alasan_datang141" model="alasan.datang">
+			<field name="code">P09</field>
+			<field name="name">Kekhawatiran preferensi seksual</field>
+		</record>
+		<record id="code_alasan_datang142" model="alasan.datang">
+			<field name="code">P10</field>
+			<field name="name">Gagap / tic </field>
+		</record>
+		<record id="code_alasan_datang143" model="alasan.datang">
+			<field name="code">P11</field>
+			<field name="name">masalah makan pada anak</field>
+		</record>
+		<record id="code_alasan_datang144" model="alasan.datang">
+			<field name="code">P12</field>
+			<field name="name">Ngompol</field>
+		</record>
+		<record id="code_alasan_datang145" model="alasan.datang">
+			<field name="code">P13</field>
+			<field name="name">Bowl Training Problem</field>
+		</record>
+		<record id="code_alasan_datang146" model="alasan.datang">
+			<field name="code">P15</field>
+			<field name="name">Penyalahgunaan alkohol kronis</field>
+		</record>
+		<record id="code_alasan_datang147" model="alasan.datang">
+			<field name="code">P16</field>
+			<field name="name">Penyalahgunaan alkohol akut</field>
+		</record>
+		<record id="code_alasan_datang148" model="alasan.datang">
+			<field name="code">P17</field>
+			<field name="name">Penyalahgunaan tembakau</field>
+		</record>
+		<record id="code_alasan_datang149" model="alasan.datang">
+			<field name="code">P18</field>
+			<field name="name">Penyalahgunaan obat</field>
+		</record>
+		<record id="code_alasan_datang150" model="alasan.datang">
+			<field name="code">P19</field>
+			<field name="name">Penyalahgunaan narkoba</field>
+		</record>
+		<record id="code_alasan_datang151" model="alasan.datang">
+			<field name="code">P20</field>
+			<field name="name">Gangguan Memori</field>
+		</record>
+		<record id="code_alasan_datang152" model="alasan.datang">
+			<field name="code">P22</field>
+			<field name="name">Gejala / keluhan perilaku anak</field>
+		</record>
+		<record id="code_alasan_datang153" model="alasan.datang">
+			<field name="code">P23</field>
+			<field name="name">Gejala / keluhan perilaku remaja</field>
+		</record>
+		<record id="code_alasan_datang154" model="alasan.datang">
+			<field name="code">P24</field>
+			<field name="name">Masalah belajar spesifik</field>
+		</record>
+		<record id="code_alasan_datang155" model="alasan.datang">
+			<field name="code">P25</field>
+			<field name="name">Masalah fase kehidupan dewasa</field>
+		</record>
+		<record id="code_alasan_datang156" model="alasan.datang">
+			<field name="code">P27</field>
+			<field name="name">Takut gangguan mental</field>
+		</record>
+		<record id="code_alasan_datang157" model="alasan.datang">
+			<field name="code">P28</field>
+			<field name="name">Keterbatasan fungsi / disability psikologis</field>
+		</record>
+		<record id="code_alasan_datang158" model="alasan.datang">
+			<field name="code">P29</field>
+			<field name="name">Gejala / keluhan psikologis lainnya</field>
+		</record>
+		<record id="code_alasan_datang159" model="alasan.datang">
+			<field name="code">R01</field>
+			<field name="name">Nyeri sistem pernafasan</field>
+		</record>
+		<record id="code_alasan_datang160" model="alasan.datang">
+			<field name="code">R02</field>
+			<field name="name">nafas pendek / sesak</field>
+		</record>
+		<record id="code_alasan_datang161" model="alasan.datang">
+			<field name="code">R03</field>
+			<field name="name">Mengi / wheezing</field>
+		</record>
+		<record id="code_alasan_datang162" model="alasan.datang">
+			<field name="code">R04</field>
+			<field name="name">Masalah pernafasan lainnya</field>
+		</record>
+		<record id="code_alasan_datang163" model="alasan.datang">
+			<field name="code">R05</field>
+			<field name="name">Batuk</field>
+		</record>
+		<record id="code_alasan_datang164" model="alasan.datang">
+			<field name="code">R06</field>
+			<field name="name">Mimisan</field>
+		</record>
+		<record id="code_alasan_datang165" model="alasan.datang">
+			<field name="code">R07</field>
+			<field name="name">Hidung tersumbat / bersin</field>
+		</record>
+		<record id="code_alasan_datang166" model="alasan.datang">
+			<field name="code">R08</field>
+			<field name="name">Gejala / keluhan hidung lainnya</field>
+		</record>
+		<record id="code_alasan_datang167" model="alasan.datang">
+			<field name="code">R09</field>
+			<field name="name">Gejala / keluhan sinus</field>
+		</record>
+		<record id="code_alasan_datang168" model="alasan.datang">
+			<field name="code">R21</field>
+			<field name="name">Gejala / keluhan tenggorokan</field>
+		</record>
+		<record id="code_alasan_datang169" model="alasan.datang">
+			<field name="code">R23</field>
+			<field name="name">Gejala / keluhan suara</field>
+		</record>
+		<record id="code_alasan_datang170" model="alasan.datang">
+			<field name="code">R24</field>
+			<field name="name">Batuk darah</field>
+		</record>
+		<record id="code_alasan_datang171" model="alasan.datang">
+			<field name="code">R25</field>
+			<field name="name">Dahak / skutum abnormal</field>
+		</record>
+		<record id="code_alasan_datang172" model="alasan.datang">
+			<field name="code">R26</field>
+			<field name="name">Takut kanker sistem pernafasan</field>
+		</record>
+		<record id="code_alasan_datang173" model="alasan.datang">
+			<field name="code">R27</field>
+			<field name="name">Takut penyakit pernafasan lainnya</field>
+		</record>
+		<record id="code_alasan_datang174" model="alasan.datang">
+			<field name="code">R28</field>
+			<field name="name">Keterbatasan fungsi / disability respirasi</field>
+		</record>
+		<record id="code_alasan_datang175" model="alasan.datang">
+			<field name="code">R29</field>
+			<field name="name">Gejala / keluhan pernafasan lainnya</field>
+		</record>
+		<record id="code_alasan_datang176" model="alasan.datang">
+			<field name="code">S01</field>
+			<field name="name">Nyeri / kelembekan kulit</field>
+		</record>
+		<record id="code_alasan_datang177" model="alasan.datang">
+			<field name="code">S02</field>
+			<field name="name">Gatal-gatal</field>
+		</record>
+		<record id="code_alasan_datang178" model="alasan.datang">
+			<field name="code">S04</field>
+			<field name="name">Benjolan / pembengkakan terlokalisir</field>
+		</record>
+		<record id="code_alasan_datang179" model="alasan.datang">
+			<field name="code">S05</field>
+			<field name="name">Benjolan / pembengkakan generalisata</field>
+		</record>
+		<record id="code_alasan_datang180" model="alasan.datang">
+			<field name="code">S06</field>
+			<field name="name">Ruam kulit terlokalisir</field>
+		</record>
+		<record id="code_alasan_datang181" model="alasan.datang">
+			<field name="code">S07</field>
+			<field name="name">Ruam kulit generalisata</field>
+		</record>
+		<record id="code_alasan_datang182" model="alasan.datang">
+			<field name="code">S08</field>
+			<field name="name">Perubahan warna kulit</field>
+		</record>
+		<record id="code_alasan_datang183" model="alasan.datang">
+			<field name="code">S20</field>
+			<field name="name">Corn / callosity</field>
+		</record>
+		<record id="code_alasan_datang184" model="alasan.datang">
+			<field name="code">S21</field>
+			<field name="name">Gejala / keluhan tekstur kulit</field>
+		</record>
+		<record id="code_alasan_datang185" model="alasan.datang">
+			<field name="code">S22</field>
+			<field name="name">Gejala / keluhan kuku</field>
+		</record>
+		<record id="code_alasan_datang186" model="alasan.datang">
+			<field name="code">S23</field>
+			<field name="name">Rambut rontok / botak</field>
+		</record>
+		<record id="code_alasan_datang187" model="alasan.datang">
+			<field name="code">S24</field>
+			<field name="name">Gejala / keluhan rambut / ketombe</field>
+		</record>
+		<record id="code_alasan_datang188" model="alasan.datang">
+			<field name="code">S26</field>
+			<field name="name">Takut kanker kulit</field>
+		</record>
+		<record id="code_alasan_datang189" model="alasan.datang">
+			<field name="code">S27</field>
+			<field name="name">Takut penyakit kulit lainnya</field>
+		</record>
+		<record id="code_alasan_datang190" model="alasan.datang">
+			<field name="code">S28</field>
+			<field name="name">Keterbatasan fungsi / disability kulit</field>
+		</record>
+		<record id="code_alasan_datang191" model="alasan.datang">
+			<field name="code">S29</field>
+			<field name="name">Gejala / keluhan kulit lainnya</field>
+		</record>
+		<record id="code_alasan_datang192" model="alasan.datang">
+			<field name="code">T01</field>
+			<field name="name">sering haus</field>
+		</record>
+		<record id="code_alasan_datang193" model="alasan.datang">
+			<field name="code">T02</field>
+			<field name="name">sering lapar</field>
+		</record>
+		<record id="code_alasan_datang194" model="alasan.datang">
+			<field name="code">T03</field>
+			<field name="name">kehilangan nafsu makan</field>
+		</record>
+		<record id="code_alasan_datang195" model="alasan.datang">
+			<field name="code">T04</field>
+			<field name="name">masalah makan pada bayi/anak</field>
+		</record>
+		<record id="code_alasan_datang196" model="alasan.datang">
+			<field name="code">T05</field>
+			<field name="name">masalah makan pada dewasa</field>
+		</record>
+		<record id="code_alasan_datang197" model="alasan.datang">
+			<field name="code">T07</field>
+			<field name="name">penambahan berat badan</field>
+		</record>
+		<record id="code_alasan_datang198" model="alasan.datang">
+			<field name="code">T08</field>
+			<field name="name">penurunan berat badan</field>
+		</record>
+		<record id="code_alasan_datang199" model="alasan.datang">
+			<field name="code">T10</field>
+			<field name="name">pertumbuhan terhambat / growth delay</field>
+		</record>
+		<record id="code_alasan_datang200" model="alasan.datang">
+			<field name="code">T11</field>
+			<field name="name">dehidrasi</field>
+		</record>
+		<record id="code_alasan_datang201" model="alasan.datang">
+			<field name="code">T26</field>
+			<field name="name">Takut kanker sistem endokrin</field>
+		</record>
+		<record id="code_alasan_datang202" model="alasan.datang">
+			<field name="code">T27</field>
+			<field name="name">takut penyakit endokrin / metabolik lainnya</field>
+		</record>
+		<record id="code_alasan_datang203" model="alasan.datang">
+			<field name="code">T28</field>
+			<field name="name">keterbatasan fungsi / disability endokrin</field>
+		</record>
+		<record id="code_alasan_datang204" model="alasan.datang">
+			<field name="code">T29</field>
+			<field name="name">gejala / keluhan endokrin / metabolik lainnya</field>
+		</record>
+		<record id="code_alasan_datang205" model="alasan.datang">
+			<field name="code">U01</field>
+			<field name="name">Nyeri saat kencing</field>
+		</record>
+		<record id="code_alasan_datang206" model="alasan.datang">
+			<field name="code">U02</field>
+			<field name="name">Sering kencing / frekuensi / urgensi</field>
+		</record>
+		<record id="code_alasan_datang207" model="alasan.datang">
+			<field name="code">U04</field>
+			<field name="name">inkontinensia urin</field>
+		</record>
+		<record id="code_alasan_datang208" model="alasan.datang">
+			<field name="code">U05</field>
+			<field name="name">masalah kencing lainnya</field>
+		</record>
+		<record id="code_alasan_datang209" model="alasan.datang">
+			<field name="code">U06</field>
+			<field name="name">kencing berdarah</field>
+		</record>
+		<record id="code_alasan_datang210" model="alasan.datang">
+			<field name="code">U07</field>
+			<field name="name">Gejala / keluhan kencing lainnya</field>
+		</record>
+		<record id="code_alasan_datang211" model="alasan.datang">
+			<field name="code">U08</field>
+			<field name="name">Kencing tertahan / tidak bisa kencing</field>
+		</record>
+		<record id="code_alasan_datang212" model="alasan.datang">
+			<field name="code">U13</field>
+			<field name="name">Gejala / keluhan kandung kencing lainnya</field>
+		</record>
+		<record id="code_alasan_datang213" model="alasan.datang">
+			<field name="code">U14</field>
+			<field name="name">Gejala / keluhan ginjal</field>
+		</record>
+		<record id="code_alasan_datang214" model="alasan.datang">
+			<field name="code">U26</field>
+			<field name="name">takut kanker saluran kencing</field>
+		</record>
+		<record id="code_alasan_datang215" model="alasan.datang">
+			<field name="code">U27</field>
+			<field name="name">takut penyakit saluran kencing lainnya</field>
+		</record>
+		<record id="code_alasan_datang216" model="alasan.datang">
+			<field name="code">U28</field>
+			<field name="name">keterbatasan fungsi / disability saluran kencing</field>
+		</record>
+		<record id="code_alasan_datang217" model="alasan.datang">
+			<field name="code">U29</field>
+			<field name="name">Gejala / keluhan saluran kencing lainnya</field>
+		</record>
+		<record id="code_alasan_datang218" model="alasan.datang">
+			<field name="code">W01</field>
+			<field name="name">Pertanyaan tentang kehamilan</field>
+		</record>
+		<record id="code_alasan_datang219" model="alasan.datang">
+			<field name="code">W02</field>
+			<field name="name">takut akan kehamilan</field>
+		</record>
+		<record id="code_alasan_datang220" model="alasan.datang">
+			<field name="code">W03</field>
+			<field name="name">perdarahan sebelum melahirkan</field>
+		</record>
+		<record id="code_alasan_datang221" model="alasan.datang">
+			<field name="code">W05</field>
+			<field name="name">mual muntah kehamilan</field>
+		</record>
+		<record id="code_alasan_datang222" model="alasan.datang">
+			<field name="code">W10</field>
+			<field name="name">Kontrasepsi sesudah senggama</field>
+		</record>
+		<record id="code_alasan_datang223" model="alasan.datang">
+			<field name="code">W11</field>
+			<field name="name">Kontrasepsi oral</field>
+		</record>
+		<record id="code_alasan_datang224" model="alasan.datang">
+			<field name="code">W12</field>
+			<field name="name">Kontrasepsi dalam rahim</field>
+		</record>
+		<record id="code_alasan_datang225" model="alasan.datang">
+			<field name="code">W13</field>
+			<field name="name">Sterilisasi</field>
+		</record>
+		<record id="code_alasan_datang226" model="alasan.datang">
+			<field name="code">W14</field>
+			<field name="name">Kontrasepsi lainnya</field>
+		</record>
+		<record id="code_alasan_datang227" model="alasan.datang">
+			<field name="code">W15</field>
+			<field name="name">mandul / sub fertility</field>
+		</record>
+		<record id="code_alasan_datang228" model="alasan.datang">
+			<field name="code">W17</field>
+			<field name="name">perdarahan setelah melahirkan</field>
+		</record>
+		<record id="code_alasan_datang229" model="alasan.datang">
+			<field name="code">W18</field>
+			<field name="name">Gejala / keluhan setelah melahirkan lainnya</field>
+		</record>
+		<record id="code_alasan_datang230" model="alasan.datang">
+			<field name="code">W19</field>
+			<field name="name">Gejala / keluhan menyusui</field>
+		</record>
+		<record id="code_alasan_datang231" model="alasan.datang">
+			<field name="code">W21</field>
+			<field name="name">kekhawatiran citra tubuh pada kehamilan</field>
+		</record>
+		<record id="code_alasan_datang232" model="alasan.datang">
+			<field name="code">W27</field>
+			<field name="name">takut komplikasi kehamilan</field>
+		</record>
+		<record id="code_alasan_datang233" model="alasan.datang">
+			<field name="code">W28</field>
+			<field name="name">keterbatasan fungsi / disability sistem reproduksi</field>
+		</record>
+		<record id="code_alasan_datang234" model="alasan.datang">
+			<field name="code">W29</field>
+			<field name="name">Gejala / keluhan kehamilan lainnya</field>
+		</record>
+		<record id="code_alasan_datang235" model="alasan.datang">
+			<field name="code">X01</field>
+			<field name="name">Nyeri genital perempuan</field>
+		</record>
+		<record id="code_alasan_datang236" model="alasan.datang">
+			<field name="code">X02</field>
+			<field name="name">nyeri haid</field>
+		</record>
+		<record id="code_alasan_datang237" model="alasan.datang">
+			<field name="code">X03</field>
+			<field name="name">nyeri intermenstrual</field>
+		</record>
+		<record id="code_alasan_datang238" model="alasan.datang">
+			<field name="code">X04</field>
+			<field name="name">nyeri intercourse perempuan</field>
+		</record>
+		<record id="code_alasan_datang239" model="alasan.datang">
+			<field name="code">X05</field>
+			<field name="name">tidak menstruasi / sedikit</field>
+		</record>
+		<record id="code_alasan_datang240" model="alasan.datang">
+			<field name="code">X06</field>
+			<field name="name">menstruasi sangat banyak </field>
+		</record>
+		<record id="code_alasan_datang241" model="alasan.datang">
+			<field name="code">X07</field>
+			<field name="name">menstruasi tidak teratur</field>
+		</record>
+		<record id="code_alasan_datang242" model="alasan.datang">
+			<field name="code">X08</field>
+			<field name="name">perdarahan diluar menstruasi</field>
+		</record>
+		<record id="code_alasan_datang243" model="alasan.datang">
+			<field name="code">X09</field>
+			<field name="name">gejala / keluhan premenstruasi</field>
+		</record>
+		<record id="code_alasan_datang244" model="alasan.datang">
+			<field name="code">X10</field>
+			<field name="name">penundaan menstruasi</field>
+		</record>
+		<record id="code_alasan_datang245" model="alasan.datang">
+			<field name="code">X11</field>
+			<field name="name">gejala / keluhan menopause</field>
+		</record>
+		<record id="code_alasan_datang246" model="alasan.datang">
+			<field name="code">X12</field>
+			<field name="name">perdarahan post menopause</field>
+		</record>
+		<record id="code_alasan_datang247" model="alasan.datang">
+			<field name="code">X13</field>
+			<field name="name">perdarahan post coituis</field>
+		</record>
+		<record id="code_alasan_datang248" model="alasan.datang">
+			<field name="code">X14</field>
+			<field name="name">keluar cairan dari vagina</field>
+		</record>
+		<record id="code_alasan_datang249" model="alasan.datang">
+			<field name="code">X15</field>
+			<field name="name">gejala / keluhan vaginal lainnya</field>
+		</record>
+		<record id="code_alasan_datang250" model="alasan.datang">
+			<field name="code">X16</field>
+			<field name="name">gejala / keluhan vulva </field>
+		</record>
+		<record id="code_alasan_datang251" model="alasan.datang">
+			<field name="code">X17</field>
+			<field name="name">gejala / keluhan pelvis</field>
+		</record>
+		<record id="code_alasan_datang252" model="alasan.datang">
+			<field name="code">X18</field>
+			<field name="name">nyeri pada payudara perempuan</field>
+		</record>
+		<record id="code_alasan_datang253" model="alasan.datang">
+			<field name="code">X19</field>
+			<field name="name">benjolan / masa pada payudara perempuan</field>
+		</record>
+		<record id="code_alasan_datang254" model="alasan.datang">
+			<field name="code">X20</field>
+			<field name="name">gejala / keluhan puting perempuan</field>
+		</record>
+		<record id="code_alasan_datang255" model="alasan.datang">
+			<field name="code">X21</field>
+			<field name="name">gejala / keluhan payudara perempuan lainnya</field>
+		</record>
+		<record id="code_alasan_datang256" model="alasan.datang">
+			<field name="code">X22</field>
+			<field name="name">kekhawatiran penampilan payudara perempuan</field>
+		</record>
+		<record id="code_alasan_datang257" model="alasan.datang">
+			<field name="code">X23</field>
+			<field name="name">takut penyakit menular seksual</field>
+		</record>
+		<record id="code_alasan_datang258" model="alasan.datang">
+			<field name="code">X24</field>
+			<field name="name">takut disfungsi seksual</field>
+		</record>
+		<record id="code_alasan_datang259" model="alasan.datang">
+			<field name="code">X25 </field>
+			<field name="name">takut kanker genital perempuan</field>
+		</record>
+		<record id="code_alasan_datang260" model="alasan.datang">
+			<field name="code">X26</field>
+			<field name="name">takut kanker payudara perempuan</field>
+		</record>
+		<record id="code_alasan_datang261" model="alasan.datang">
+			<field name="code">X27</field>
+			<field name="name">takut penyakit genital / payudara lainnya</field>
+		</record>
+		<record id="code_alasan_datang262" model="alasan.datang">
+			<field name="code">X28</field>
+			<field name="name">keterbatasan fungsi / disability genital perempuan</field>
+		</record>
+		<record id="code_alasan_datang263" model="alasan.datang">
+			<field name="code">X29</field>
+			<field name="name">gejala / keluhan genital perempuan lainnya</field>
+		</record>
+		<record id="code_alasan_datang264" model="alasan.datang">
+			<field name="code">Y01</field>
+			<field name="name">nyeri pada penis</field>
+		</record>
+		<record id="code_alasan_datang265" model="alasan.datang">
+			<field name="code">Y01</field>
+			<field name="name">nyeri pada testis / skrotum</field>
+		</record>
+		<record id="code_alasan_datang266" model="alasan.datang">
+			<field name="code">Y03</field>
+			<field name="name">keluar cairan dari lubang kencing / uretral discharge</field>
+		</record>
+		<record id="code_alasan_datang267" model="alasan.datang">
+			<field name="code">Y04</field>
+			<field name="name">gejala / keluhan penis lainnya</field>
+		</record>
+		<record id="code_alasan_datang268" model="alasan.datang">
+			<field name="code">Y05</field>
+			<field name="name">gejala / keluhan testis / skrotum lainnya</field>
+		</record>
+		<record id="code_alasan_datang269" model="alasan.datang">
+			<field name="code">Y06</field>
+			<field name="name">gejala / keluhan prostat</field>
+		</record>
+		<record id="code_alasan_datang270" model="alasan.datang">
+			<field name="code">Y07</field>
+			<field name="name">impotensi NOS</field>
+		</record>
+		<record id="code_alasan_datang271" model="alasan.datang">
+			<field name="code">Y08</field>
+			<field name="name">gejala / keluhan fungsi seksual pada laki-laki</field>
+		</record>
+		<record id="code_alasan_datang272" model="alasan.datang">
+			<field name="code">Y10</field>
+			<field name="name">mandul / subfertil pada laki-laki</field>
+		</record>
+		<record id="code_alasan_datang273" model="alasan.datang">
+			<field name="code">Y13</field>
+			<field name="name">sterilisasi laki-laki</field>
+		</record>
+		<record id="code_alasan_datang274" model="alasan.datang">
+			<field name="code">Y14</field>
+			<field name="name">kontrasepsi laki-laki lainnya</field>
+		</record>
+		<record id="code_alasan_datang275" model="alasan.datang">
+			<field name="code">Y16</field>
+			<field name="name">keluhan / gejala pada payudara laki-laki</field>
+		</record>
+		<record id="code_alasan_datang276" model="alasan.datang">
+			<field name="code">Y24</field>
+			<field name="name">takut disfungsi seksual laki-laki</field>
+		</record>
+		<record id="code_alasan_datang277" model="alasan.datang">
+			<field name="code">Y25</field>
+			<field name="name">takut penyakit menular seksual laki-laki</field>
+		</record>
+		<record id="code_alasan_datang278" model="alasan.datang">
+			<field name="code">Y26</field>
+			<field name="name">takut kanker genital laki-laki</field>
+		</record>
+		<record id="code_alasan_datang279" model="alasan.datang">
+			<field name="code">Y27 </field>
+			<field name="name">takut penyakit genital laki-laki lainnya</field>
+		</record>
+		<record id="code_alasan_datang280" model="alasan.datang">
+			<field name="code">Y28</field>
+			<field name="name">keterbatasan fungsi / disabliti genital laki-laki</field>
+		</record>
+		<record id="code_alasan_datang281" model="alasan.datang">
+			<field name="code">Y29</field>
+			<field name="name">keluhan genital laki-laki lainnya</field>
+		</record>
+		<record id="code_alasan_datang282" model="alasan.datang">
+			<field name="code">Z01</field>
+			<field name="name">masalah kemiskinan / keuangan</field>
+		</record>
+		<record id="code_alasan_datang283" model="alasan.datang">
+			<field name="code">Z02</field>
+			<field name="name">masalah makanan / air</field>
+		</record>
+		<record id="code_alasan_datang284" model="alasan.datang">
+			<field name="code">Z03</field>
+			<field name="name">masalah perumahan / lingkungan</field>
+		</record>
+		<record id="code_alasan_datang285" model="alasan.datang">
+			<field name="code">Z04</field>
+			<field name="name">masalah sosial budaya</field>
+		</record>
+		<record id="code_alasan_datang286" model="alasan.datang">
+			<field name="code">Z05</field>
+			<field name="name">masalah pekerjaan</field>
+		</record>
+		<record id="code_alasan_datang287" model="alasan.datang">
+			<field name="code">Z06</field>
+			<field name="name">masalah pengangguran</field>
+		</record>
+		<record id="code_alasan_datang288" model="alasan.datang">
+			<field name="code">Z07</field>
+			<field name="name">masalah pendidikan</field>
+		</record>
+		<record id="code_alasan_datang289" model="alasan.datang">
+			<field name="code">Z08</field>
+			<field name="name">masalah kesejahteraan sosial</field>
+		</record>
+		<record id="code_alasan_datang290" model="alasan.datang">
+			<field name="code">Z09</field>
+			<field name="name">masalah hukum</field>
+		</record>
+		<record id="code_alasan_datang291" model="alasan.datang">
+			<field name="code">Z10</field>
+			<field name="name">masalah sistem pelayanan kesehatan</field>
+		</record>
+		<record id="code_alasan_datang292" model="alasan.datang">
+			<field name="code">Z11</field>
+			<field name="name">masalah kepatuhan</field>
+		</record>
+		<record id="code_alasan_datang293" model="alasan.datang">
+			<field name="code">Z12</field>
+			<field name="name">masalah hubungan dengan pasangan</field>
+		</record>
+		<record id="code_alasan_datang294" model="alasan.datang">
+			<field name="code">Z13</field>
+			<field name="name">masalah perilaku pasangan</field>
+		</record>
+		<record id="code_alasan_datang295" model="alasan.datang">
+			<field name="code">Z14</field>
+			<field name="name">masalah penyakit pasangan</field>
+		</record>
+		<record id="code_alasan_datang296" model="alasan.datang">
+			<field name="code">Z15</field>
+			<field name="name">masalah kehilangan / kematian pasangan</field>
+		</record>
+		<record id="code_alasan_datang297" model="alasan.datang">
+			<field name="code">Z16</field>
+			<field name="name">masalah hubungan dengan anak</field>
+		</record>
+		<record id="code_alasan_datang298" model="alasan.datang">
+			<field name="code">Z18</field>
+			<field name="name">masalah penyakit anak</field>
+		</record>
+		<record id="code_alasan_datang299" model="alasan.datang">
+			<field name="code">Z19</field>
+			<field name="name">masalah kehilangan atau kematian anak</field>
+		</record>
+		<record id="code_alasan_datang300" model="alasan.datang">
+			<field name="code">Z20</field>
+			<field name="name">masalah hubungan dengan orang tua / keluarga</field>
+		</record>
+		<record id="code_alasan_datang301" model="alasan.datang">
+			<field name="code">Z21</field>
+			<field name="name">masalah perilaku orang tua / keluarga</field>
+		</record>
+		<record id="code_alasan_datang302" model="alasan.datang">
+			<field name="code">Z22</field>
+			<field name="name">masalah penyakit orang tua / keluarga</field>
+		</record>
+		<record id="code_alasan_datang303" model="alasan.datang">
+			<field name="code">Z23</field>
+			<field name="name">masalah kehilangan / kematian orang tua / keluarga</field>
+		</record>
+		<record id="code_alasan_datang304" model="alasan.datang">
+			<field name="code">Z24</field>
+			<field name="name">masalah hubungan dengan teman</field>
+		</record>
+		<record id="code_alasan_datang305" model="alasan.datang">
+			<field name="code">Z25</field>
+			<field name="name">masalah penyerangan / peristiwa yang berbahaya</field>
+		</record>
+		<record id="code_alasan_datang306" model="alasan.datang">
+			<field name="code">Z27</field>
+			<field name="name">takut akan masalah sosial</field>
+		</record>
+		<record id="code_alasan_datang307" model="alasan.datang">
+			<field name="code">Z28</field>
+			<field name="name">keterbatasan fungsi / disability masalah sosial</field>
+		</record>
+		<record id="code_alasan_datang308" model="alasan.datang">
+			<field name="code">Z29</field>
+			<field name="name">masalah sosial NOS</field>
+		</record>
+	</data>
+</odoo>
