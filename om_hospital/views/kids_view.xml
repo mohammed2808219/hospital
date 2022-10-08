@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_hospital_kids" model="ir.actions.act_window">
+        <field name="name">Kids</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.manegement</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{}</field>
+        <field name="domain">['|', ('age', '&lt;=', 18), ('gender', '=', 'male')]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your first Kids!
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem id="hospital_profile_kids" action="action_hospital_kids" parent="hospital_sub_menu" name="Kids" sequence="20"/>
+
+</odoo>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+                <!-- provinsi_tbl -->
+
+    <record id="view_provinsi_tbl_tree" model="ir.ui.view">
+        <field name="name">view.provinsi.tbl.tree</field>
+        <field name="model">country.state</field>
+        <field name="arch" type="xml">
+            <tree string="Config Provinsi" editable="top">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_provinsi_tbl_search" model="ir.ui.view">
+        <field name="name">view.provinsi.tbl.search</field>
+        <field name="model">country.state</field>
+        <field name="arch" type="xml">
+            <search string="Search Provinsi">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_provinsi_tbl" model="ir.actions.act_window">
+        <field name="name">Config Provinsi</field>
+        <field name="res_model">country.state</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_provinsi_tbl_tree"/>
+        <field name="search_view_id" ref="view_provinsi_tbl_search"/>
+    </record>
+
+                <!-- kota.kab.tbl -->
+
+    <record id="view_kota_kab_tbl_tree" model="ir.ui.view">
+        <field name="name">view.kota.kab.tbl.tree</field>
+        <field name="model">city</field>
+        <field name="arch" type="xml">
+            <tree string="Config Kota/Kabupaten" editable="top">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+                <field name="state_id"  required="1" options="{'no_edit':True,'no_create':True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_kota_kab_tbl_search" model="ir.ui.view">
+        <field name="name">view.kota.kab.tbl.search</field>
+        <field name="model">city</field>
+        <field name="arch" type="xml">
+            <search string="Search Kota/Kabupaten">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_kota_kab_tbl" model="ir.actions.act_window">
+        <field name="name">Config Kota/Kabupaten</field>
+        <field name="res_model">city</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_kota_kab_tbl_tree"/>
+        <field name="search_view_id" ref="view_kota_kab_tbl_search"/>
+    </record>
+
+                <!-- kecamatan.tbl -->
+
+    <record id="view_kecamatan_tbl_tree" model="ir.ui.view">
+        <field name="name">view.kecamatan.tbl.tree</field>
+        <field name="model">kecamatan</field>
+        <field name="arch" type="xml">
+            <tree string="Config Kecamatan" editable="top">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+                <field name="city_id" required="1" options="{'no_edit':True,'no_create':True}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_kecamatan_tbl_search" model="ir.ui.view">
+        <field name="name">view.kecamatan.tbl.search</field>
+        <field name="model">kecamatan</field>
+        <field name="arch" type="xml">
+            <search string="Search Kecamatan">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_kecamatan_tbl" model="ir.actions.act_window">
+        <field name="name">Config Kecamatan</field>
+        <field name="res_model">kecamatan</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_kecamatan_tbl_tree"/>
+        <field name="search_view_id" ref="view_kecamatan_tbl_search"/>
+    </record>
+
+                <!-- kelurahan.tbl -->
+
+    <record id="view_kelurahan_tbl_tree" model="ir.ui.view">
+        <field name="name">view.kelurahan.tbl.tree</field>
+        <field name="model">kelurahan</field>
+        <field name="arch" type="xml">
+            <tree string="Config Kelurahan" editable="top">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+                <field name="kecamatan_id" required="1" options="{'no_edit':True,'no_create':True}"/>
+                <field name="zip"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_kelurahan_tbl_search" model="ir.ui.view">
+        <field name="name">view.kelurahan.tbl.search</field>
+        <field name="model">kelurahan</field>
+        <field name="arch" type="xml">
+            <search string="Search Kelurahan">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_kelurahan_tbl" model="ir.actions.act_window">
+        <field name="name">Config Kelurahan</field>
+        <field name="res_model">kelurahan</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_kelurahan_tbl_tree"/>
+        <field name="search_view_id" ref="view_kelurahan_tbl_search"/>
+    </record>
+
+                <!-- menu -->
+    <menuitem id="menu_config_wilayah" name="Configurations Wilayah" parent="partner_root_menu" sequence="03"/>
+    <menuitem id="menu_provinsi_tbl" name="Configurations Provinsi" parent="menu_config_wilayah" action="action_provinsi_tbl"/>
+    <menuitem id="menu_kota_kab_tbl" name="Configurations Kota/Kabupaten" parent="menu_config_wilayah" action="action_kota_kab_tbl"/>
+    <menuitem id="menu_kecamatan_tbl" name="Configurations Kecamatan" parent="menu_config_wilayah" action="action_kecamatan_tbl"/>
+    <menuitem id="menu_kelurahan_tbl" name="Configurations Kelurahan" parent="menu_config_wilayah" action="action_kelurahan_tbl"/>
+
+</odoo>
