@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="partner_view_tree" model="ir.ui.view">
+        <field name="name">partner.view.tree</field>
+        <field name="model">partner</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="nik" />
+                <field name="jenis_kelamin" />
+                <field name="tempat_lahir" />
+                <field name="tgl_lahir" />
+                <field name="agama" />
+                <field name="pendidikan" />
+                <field name="jenis_pekerjaan" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="partner_view_form" model="ir.ui.view">
+        <field name="name">partner.view.form</field>
+        <field name="model">partner</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            NEW
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <separator colspan='2' string='Data Personal' style="font-size: 25px;"/>
+                            <field name="name"></field>
+                            <field name="nik"></field>
+                            <field name="no_hp"></field>
+                            <field name="email"></field>
+                            <field name="tgl_lahir"></field>
+                            <field name="jenis_kelamin"></field>
+                            <field name="tempat_lahir"></field>
+                            <field name="related_status_perkawinan" attrs="{'invisible':True}"></field>
+                            <field name="status_perkawinan" options="{'no_open':True,'no_create':True}"></field>
+                            <label for="usia_kawin_pertama_tahun" string="usia kawin pertama" attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}"/>
+                                <div attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}">
+                                    tahun :<field colspan='4' name="usia_kawin_pertama_tahun" attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}" class="oe_inline"></field>
+                                    bulan :<field colspan='4' name="usia_kawin_pertama_bulan" attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}" class="oe_inline"></field>
+                                </div>
+                            <field name="golongan_darah"></field>
+                            <field name="kb3" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="kb3a1_usiahamil" attrs="{'invisible':['|','|','|',('kb3','=','tidak'),('kb3','=', False),('jenis_kelamin','=', False),('jenis_kelamin','=','1')]}" options="{'no_open':True,'no_create':True}"></field>
+                        </group>
+                        <group >
+                            <separator colspan='2' string='Data Umum' style="font-size: 25px;"/>
+                            <field name="alamat"></field>
+                            <field name="kode_pos"></field>
+                            <field name="provinsi_id" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="kota_id" attrs="{'invisible':[('provinsi_id','=',False)]}" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="kecamatan_id" attrs="{'invisible':[('kota_id','=',False)]}" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="kelurahan_id" attrs="{'invisible':[('kecamatan_id','=',False)]}" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="etnis"></field>
+                            <field name="agama"></field>
+                            <field name="pendidikan" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="jenis_pekerjaan" options="{'no_open':True,'no_create':True}"></field>
+                            
+                        </group>
+                        <group>
+                            <separator colspan='2' string='Data Keluarga' style="font-size: 25px;"/>
+                            <field name="pk4"></field>
+                            <field name="pk5"></field>
+                            <field name="pk6"></field>
+                            <field name="kb7" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk19" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk27" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk28" options="{'no_open':True,'no_create':True}"></field>
+                            
+                        </group>
+                        <group>
+                            <separator colspan='2' string='Data Keluarga' style="font-size: 25px;"/>
+                            <field name="no_kartu_keluarga"></field>
+                            <field name="kepala_keluarga"></field>
+                            <field name="status_keluarga" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="kewarganegaraan"></field>
+                            <label for="kba1" string="Berapa jumlah anak lahir hidup" attrs="{'invisible':[('kepala_keluarga','=',False)]}"></label>
+                            <div attrs="{'invisible':[('kepala_keluarga','=',False)]}">   
+                                    laki-laki:<field colspan='2' name="kba1"  width="20"></field>
+                                    perempuan:<field colspan='2' name="kba2"  width="20"></field>
+                            </div>
+                            <label for="kbb1" string="Berapa jumlah anak masih hidup" attrs="{'invisible':[('kepala_keluarga','=',False)]}"></label>
+                            <div attrs="{'invisible':[('kepala_keluarga','=',False)]}">
+                                laki-laki:<field colspan='8' name="kbb1" ></field>
+                                perempuan:<field colspan='8' name="kbb2" ></field>
+                            </div>
+                            <field name="kb1" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}"></field>
+                            <field name="kd_ibukandung" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}"></field>
+                            <field name="pk22" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk23" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk24" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk25"></field>
+                            <field name="pk26"></field>
+                            <field name="pk20" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk21" options="{'no_open':True,'no_create':True}"></field>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="partner_view_search" model="ir.ui.view">
+        <field name="name">partner.view.search</field>
+        <field name="model">partner</field>
+        <field name="arch" type="xml">
+            <search string="search coustom">
+                <field name="name"/>
+                <field name="nik"/>
+                <field name="alamat"/>
+            </search>
+        </field>
+    </record>
+
+
+    <record id="action_partner_profile" model="ir.actions.act_window">
+        <field name="name">pasien profile</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your first partner!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="partner_root_menu" name="PASIEN"/>
+    <menuitem id="partner_sub_menu" parent="partner_root_menu" action="action_partner_profile" name="Regestrasi Pasien" sequence="01"/>
+
+
+</odoo>

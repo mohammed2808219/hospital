@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="kartu_keluarga_view_tree" model="ir.ui.view">
+        <field name="name">kartu.keluarga.view.tree</field>
+        <field name="model">kartu.keluarga</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+                <field name="name_id"/>
+                <field name="nik_kepala_keluarga"/>
+                <field name="no_kartu_keluarga"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="kartu_keluarga_view_form" model="ir.ui.view">
+        <field name="name">kartu.keluarga.view.form</field>
+        <field name="model">kartu.keluarga</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <label for="no_kartu_keluarga" class="oe_edit_only" string="Nomor Kartu Keluarga : " style="font-size: 25px;"/>
+                                <field name="no_kartu_keluarga" readonly="1"/><br/><br/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="name_id" placeholder="cari Nama, NIK, Nomor kk" options="{'no_open':True,'no_create':True}"/>
+                                <field name="alamat"/>
+                                <field name="kode_pos"/>
+                                <field name="nik_kepala_keluarga"/>
+                                <field name="kepala_keluarga"/>
+                            </group>
+                            <group>
+                                <field name="desa_id"/>
+                                <field name="kecamatan_id"/>
+                                <field name="kota_id"/>
+                                <field name="provinsi_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Data Keluarga">
+                                <field name="partner_ids" context="{'default_no_kartu_keluarga': no_kartu_keluarga}" attrs="{'readonly':[('kepala_keluarga','=',False)]}">
+                                    <tree>
+                                        <field name="name" />
+                                        <field name="jenis_kelamin"/>
+                                        <field name="nik"/>
+                                        <field name="tempat_lahir" />
+                                        <field name="tgl_lahir" />
+                                        <field name="agama"/> 
+                                        <field name="pendidikan"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="kartu_keluarga_view_kanban" model="ir.ui.view">
+        <field name="name">kartu.keluarga.view.kanban</field>
+        <field name="model">kartu.keluarga</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        Name: <field name="name_id" />
+                                    </li>
+                                    <li>
+                                        NIK: <field name="nik_kepala_keluarga" />
+                                    </li>
+                                    <li>
+                                        Nomor kartu Keluarga: <field name="no_kartu_keluarga" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="kartu_keluarga_view_search" model="ir.ui.view">
+        <field name="name">kartu.keluarga.view.search</field>
+        <field name="model">kartu.keluarga</field>
+        <field name="arch" type="xml">
+            <search string="search coustom">
+                <field name="name_id"/>
+                <field name="nik_kepala_keluarga"/>
+                <field name="no_kartu_keluarga"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_kartu_keluarga_profile" model="ir.actions.act_window">
+        <field name="name">kartu keluarga profile</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">kartu.keluarga</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Your first kartu.keluarga!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="kartu_keluarga_sub_menu" parent="partner_root_menu" action="action_kartu_keluarga_profile" name="Kartu Keluarga" sequence="02"/>
+
+</odoo>

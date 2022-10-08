@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="pk21_view_tree" model="ir.ui.view">
+        <field name="name">pk21.view.tree</field>
+        <field name="model">pk21</field>
+        <field name="arch" type="xml">
+            <tree string="Configuration Data PK21" editable="top">
+                <field name="name_Pertanyaan"/>
+                <field name="name"/>
+                <field name="kode"/>
+                <field name="value"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="pk21_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_sts_hubungan_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'sts_hubungan')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_sts_kawin_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'sts_kawin')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_id_pekerjaan_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'id_pekerjaan')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_jns_pendidikan_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'jns_pendidikan')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_kb7_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'kb7')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    
+    <record id="pk21_pk19_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk19')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_pk20_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk20')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_pk21_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk21')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_pk22_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk22')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_pk23_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk23')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_pk24_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk24')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    <record id="pk21_pk27_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk27')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+
+    <record id="pk21_pk28_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk28')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+    
+
+    <record id="pk21_pk19_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+        <field name="view_mode">tree</field>
+        <field name="domain">[('name','=', 'pk19')]</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data PK21 
+                </p>
+            </field>
+        </field>
+    </record>
+
+    <record id="pk21_sub_menu_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">pk21</field>
+    </record>
+
+    <menuitem
+        id="pk21_root_menu"
+        name="PK21"
+        action="pk21_action"
+        sequence="1"/>
+
+    <menuitem 
+        id="pk21_sub_menu"
+        name="PK21"
+        parent="pk21_root_menu"
+        sequence="1"/>
+        
+        <menuitem 
+            id="pk21_KEPENDUDUKAN"
+            name="KEPENDUDUKAN"
+            parent="pk21_sub_menu"
+            sequence="1"/>
+
+            <menuitem 
+                id="pk21_sts_hubungan"
+                name="Hubungan dengan kepala keluarga"
+                parent="pk21_KEPENDUDUKAN"
+                action="pk21_sts_hubungan_action"
+                sequence="1"/>
+
+            <menuitem 
+                id="pk21_sts_kawin"
+                name="Status perkawinan"
+                parent="pk21_KEPENDUDUKAN"
+                action=""
+                sequence="2"/>
+
+            <menuitem 
+                id="pk21_id_pekerjaan"
+                name="Status pekerjaan"
+                parent="pk21_KEPENDUDUKAN"
+                action=""
+                sequence="3"/>
+
+            <menuitem 
+                id="pk21_jns_pendidikan"
+                name="Pendidikan"
+                parent="pk21_KEPENDUDUKAN"
+                action=""
+                sequence="4"/>
+
+        <menuitem 
+            id="pk21_KELUARGA_BERENCANA"
+            name="KELUARGA BERENCANA"
+            parent="pk21_sub_menu"
+            sequence="2"/>
+
+            <menuitem 
+                id="pk21_kb7"
+                name="Jenis alat/obat/cara KB"
+                parent="pk21_KELUARGA_BERENCANA"
+                action="pk21_kb7_action"
+                sequence="1"/>  
+                
+        <menuitem 
+            id="pk21_PEMBANGUNGAN_KELUARGA"
+            name="LINGKUNGKUNGAN FISIK KELUARGA"
+            parent="pk21_sub_menu"
+            sequence="3"/>
+
+            <menuitem 
+                id="pk21_pk19"
+                name="Jenis atap rumah terluas"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk19_action"
+                sequence="2"/>
+            <menuitem 
+                id="pk21_pk20"
+                name="Jenis dinding rumah terluas"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk20_action"
+                sequence="3"/>
+            <menuitem 
+                id="pk21_pk21"
+                name="Jenis lantai rumah terluas"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk21_action"
+                sequence="4"/>
+            <menuitem 
+                id="pk21_pk22"
+                name="Sumber penerangan utama"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk22_action"
+                sequence="5"/>
+            <menuitem 
+                id="pk21_pk23"
+                name="Sumber air minum utama"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk23_action"
+                sequence="6"/>
+            <menuitem 
+                id="pk21_pk24"
+                name="Memiliki fasilitas tempat buang air besar"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk24_action"
+                sequence="7"/>
+            <menuitem 
+                id="pk21_pk27"
+                name="Bahan bakar utama untuk memasak"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk27_action"
+                sequence="7"/>
+            <menuitem 
+                id="pk21_pk28"
+                name="Kepemilikan rumah/bangunan tempat tinggal"
+                parent="pk21_PEMBANGUNGAN_KELUARGA"
+                action="pk21_pk28_action"
+                sequence="7"/>
+        
+    </odoo>
+    
+    <!-- action="" -->
+    <!-- action="" -->
+    <!-- action="" -->
+    <!-- action="" -->

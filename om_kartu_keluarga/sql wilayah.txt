@@ -1,0 +1,13 @@
+1_ insert into provinsi_tbl (id,name,code)
+select CAST(left(code,2) AS INTEGER),name, left(code,2) from configuration_wilayah where length(code) = 2
+
+2- insert into kota_kab_tbl (id,name,code,code_provinsi_id)
+select CAST(left(code,4) AS INTEGER),name, left(code,4), CAST(left(code,2) AS INTEGER) from configuration_wilayah where length(code) = 4 
+
+
+3_ insert into kecamatan_tbl (id,name,code,code_provinsi_id,code_kota_kab_id)
+select CAST(left(code,6) AS INTEGER),name, left(code,6), CAST(left(code,2) AS INTEGER), CAST(left(code,4) AS INTEGER) from configuration_wilayah where length(code) = 6
+
+
+4_ insert into kelurahan_tbl(id,name,code,code_provinsi_id,code_kota_kab_id,code_kecamatan_id)
+select CAST(left(code,10) AS BIGINT),name,left(code,10),CAST(left(code,2) AS INTEGER),CAST(left(code,4) AS INTEGER),CAST(left(code,6) AS INTEGER) from configuration_wilayah where length(code) = 10

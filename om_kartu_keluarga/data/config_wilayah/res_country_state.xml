@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="province_id_11" model="country.state">
+            <field name="name">NANGGROE ACEH DARUSSALAM</field>
+            <field name="code">11</field>
+        </record>
+
+        <record id="province_id_12" model="country.state">
+            <field name="name">SUMATERA UTARA</field>
+            <field name="code">12</field>
+        </record>
+
+        <record id="province_id_75" model="country.state">
+            <field name="name">GORONTALO</field>
+            <field name="code">75</field>
+        </record>
+
+        <record id="province_id_76" model="country.state">
+            <field name="name">SULAWESI BARAT</field>
+            <field name="code">76</field>
+        </record>
+
+        <record id="province_id_15" model="country.state">
+            <field name="name">JAMBI</field>
+            <field name="code">15</field>
+        </record>
+
+        <record id="province_id_18" model="country.state">
+            <field name="name">LAMPUNG</field>
+            <field name="code">18</field>
+        </record>
+
+        <record id="province_id_13" model="country.state">
+            <field name="name">SUMATERA BARAT</field>
+            <field name="code">13</field>
+        </record>
+
+        <record id="province_id_14" model="country.state">
+            <field name="name">RIAU</field>
+            <field name="code">14</field>
+        </record>
+
+        <record id="province_id_16" model="country.state">
+            <field name="name">SUMATERA SELATAN</field>
+            <field name="code">16</field>
+        </record>
+
+        <record id="province_id_19" model="country.state">
+            <field name="name">BANGKA-BELITUNG</field>
+            <field name="code">19</field>
+        </record>
+
+        <record id="province_id_21" model="country.state">
+            <field name="name">KEPULAUAN RIAU</field>
+            <field name="code">21</field>
+        </record>
+
+        <record id="province_id_31" model="country.state">
+            <field name="name">D K I JAKARTA</field>
+            <field name="code">31</field>
+        </record>
+
+        <record id="province_id_32" model="country.state">
+            <field name="name">JAWA BARAT</field>
+            <field name="code">32</field>
+        </record>
+
+        <record id="province_id_34" model="country.state">
+            <field name="name">D I YOGYAKARTA</field>
+            <field name="code">34</field>
+        </record>
+
+        <record id="province_id_35" model="country.state">
+            <field name="name">JAWA TIMUR</field>
+            <field name="code">35</field>
+        </record>
+
+        <record id="province_id_33" model="country.state">
+            <field name="name">JAWA TENGAH</field>
+            <field name="code">33</field>
+        </record>
+
+        <record id="province_id_36" model="country.state">
+            <field name="name">BANTEN</field>
+            <field name="code">36</field>
+        </record>
+
+        <record id="province_id_51" model="country.state">
+            <field name="name">BALI</field>
+            <field name="code">51</field>
+        </record>
+
+        <record id="province_id_52" model="country.state">
+            <field name="name">NUSA TENGGARA BARAT</field>
+            <field name="code">52</field>
+        </record>
+
+        <record id="province_id_53" model="country.state">
+            <field name="name">NUSA TENGGARA TIMUR</field>
+            <field name="code">53</field>
+        </record>
+
+        <record id="province_id_61" model="country.state">
+            <field name="name">KALIMANTAN BARAT</field>
+            <field name="code">61</field>
+        </record>
+
+        <record id="province_id_62" model="country.state">
+            <field name="name">KALIMANTAN TENGAH</field>
+            <field name="code">62</field>
+        </record>
+
+        <record id="province_id_63" model="country.state">
+            <field name="name">KALIMANTAN SELATAN</field>
+            <field name="code">63</field>
+        </record>
+
+        <record id="province_id_71" model="country.state">
+            <field name="name">SULAWESI UTARA</field>
+            <field name="code">71</field>
+        </record>
+
+        <record id="province_id_72" model="country.state">
+            <field name="name">SULAWESI TENGAH</field>
+            <field name="code">72</field>
+        </record>
+
+        <record id="province_id_73" model="country.state">
+            <field name="name">SULAWESI SELATAN</field>
+            <field name="code">73</field>
+        </record>
+
+        <record id="province_id_74" model="country.state">
+            <field name="name">SULAWESI TENGGARA</field>
+            <field name="code">74</field>
+        </record>
+
+        <record id="province_id_17" model="country.state">
+            <field name="name">BENGKULU</field>
+            <field name="code">17</field>
+        </record>
+
+        <record id="province_id_65" model="country.state">
+            <field name="name">KALIMANTAN UTARA</field>
+            <field name="code">65</field>
+        </record>
+
+        <record id="province_id_64" model="country.state">
+            <field name="name">KALIMANTAN TIMUR</field>
+            <field name="code">64</field>
+        </record>
+
+        <record id="province_id_81" model="country.state">
+            <field name="name">MALUKU</field>
+            <field name="code">81</field>
+        </record>
+
+        <record id="province_id_94" model="country.state">
+            <field name="name">PAPUA</field>
+            <field name="code">94</field>
+        </record>
+
+        <record id="province_id_91" model="country.state">
+            <field name="name">IRIAN JAYA BARAT</field>
+            <field name="code">91</field>
+        </record>
+
+        <record id="province_id_82" model="country.state">
+            <field name="name">MALUKU UTARA</field>
+            <field name="code">82</field>
+        </record>
+    </data>
+</openerp>
