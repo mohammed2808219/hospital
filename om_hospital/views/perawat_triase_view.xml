@@ -68,6 +68,7 @@
                                 </div>
                                 <separator colspan='2' string='Peringatan' style="font-size: 25px; margin-bottom:25px;"/>
                                 <field name="peringatan_interpretasi_imt" readonly="1" string="Peringatan Interpretasi IMT"/>
+                                <field name="peringatan_alergi" readonly="1" string="Peringatan Alergi"/>
                             </group>
                             <group>
                                 <separator colspan='2' string='Profil Keluarga' style="font-size: 25px; margin-bottom:25px;"/>

@@ -55,7 +55,8 @@ class HospitalPerawat(models.Model):
     kb_kp_petugas = fields.Boolean(default=False)
     keluarga_informasi_diperoleh = fields.Selection([('pejabat_pemerintah', 'Pejabat Pemerintah'), ('petugas_keluarga_berencana-pkb-plkb-petugas-lapangan-kb-lainnya', 'Petugas Keluarga Berencana/PKB/PLKB/Petugas Lapangan KB/Lainnya'), ('guru-dosen', 'Guru/Dosen'), (
         'tokoh-agama', 'Tokoh Agama'), ('tokoh-masyarakat', 'Tokoh Masyarakat Masyarakat'), ('dokter', 'Dokter'), ('bidan-perawat', 'Bidan/Perawat'), ('perangkat-desa-kelurahan', 'Perangkat Desa/Kelurahan'), ('kader-imp', 'Kader/IMP')])
-    peringatan_interpretasi_imt = fields.Selection([('kurang','Kurang'),('normal','Normal'),('pre-obesitas','Pre-Obesitas'),('obesitas','Obesitas'),('obesitas-1','Obesitas 1'),('obesitas-2','Obesitas 2')])   
+    peringatan_interpretasi_imt = fields.Selection([('kurang','Kurang'),('normal','Normal'),('pre-obesitas','Pre-Obesitas'),('obesitas','Obesitas'),('obesitas-1','Obesitas 1'),('obesitas-2','Obesitas 2')]) 
+    peringatan_alergi = fields.Text('Alergi')  
     ghk_merokok = fields.Selection([('tidak', 'Tidak'), ('ya', 'Ya')], string="Merokok ?")
     ghk_alkohol = fields.Selection([('tidak', 'Tidak'), ('ya', 'Ya')], string="Konsumsi Alkohol ?")
     ghk_olahraga = fields.Selection([('tidak', 'Tidak'), ('ya', 'Ya')], string="Olahraga 3 x 30 Menit per-Minggu ?")
@@ -92,11 +93,17 @@ class HospitalPerawat(models.Model):
             self.imt = 0
             self.peringatan_interpretasi_imt = ''
 
+    @api.onchange('alergi_makanan', 'alergi_obat')
+    def _onchange_alergi(self):
+        if self.alergi:
+            alergi_str = ''
+            if self.alergi_makanan and self.alergi_obat:
+                alergi_str += 'Makanan : ' + self.alergi_makanan + "\n" + 'Obat : ' + self.alergi_obat
+                self.peringatan_alergi = alergi_str
 
 
     @api.model
     def create(self, vals):
-        import ipdb; ipdb.set_trace()
         if vals.get('tinggi_badan') and vals.get('berat_badan'):
             imt = vals.get('tinggi_badan') / (vals.get('berat_badan') / 100)
             self.imt = float(imt)
@@ -115,5 +122,4 @@ class HospitalPerawat(models.Model):
         else :
             self.imt = 0
             self.peringatan_interpretasi_imt = ''
-            
         return super(HospitalPerawat, self).create(vals)
