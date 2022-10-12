@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id="hospital_perawat_triase_view_form" model="ir.ui.view">
+            <field name="name">hospital.perawat.triase.view.form</field>
+            <field name="model">hospital.perawat</field>
+            <field name="arch" type="xml">
+                <form string="Triase">
+                    <sheet>
+                            <separator colspan='2' string='Triase' style="font-size: 25px;"/>
+                            <group>
+                                <field name="keluhan_ids" widget="many2many_tags" style="margin: 5px 5px 5px;" options="{'no_edit':True,'no_create':True, 'no_open' : True}"/>
+                                <field name="keadaan_sakit" style="margin: 5px 5px 5px;"/>
+                                <field name="kesadaran" style="margin: 5px 5px 5px;"/>
+                            </group>
+                        <group>
+                            <group>
+                                <separator colspan='2' string='Tanda Tanda Vital' style="font-size: 25px; margin-bottom:25px;"/>
+                                <label for="sistole" string ="Sistole"/>
+                                <div>
+                                    <field name="sistole" class="oe_inline" style="margin: 5px 5px 5px;"/> mmHg
+                                </div>
+                                <label for="diastole" string ="Diastole"/>
+                                <div>
+                                    <field name="diastole" class="oe_inline" style="margin: 5px 5px 5px;"/> mmHg
+                                </div>
+                                <label for="nafas" string="Nafas"/>
+                                <div>
+                                    <field name="nafas" class="oe_inline" style="margin: 5px 5px 5px;"/> per menit
+                                </div>
+                                <label for="suhu_badan" string="Suhu Badan"/>
+                                <div>
+                                    <field name="suhu_badan" class="oe_inline" style="margin: 5px 5px 5px;"/> Celcius
+                                </div>
+                                <label for="saturasi"/>
+                                <div>
+                                    <field name="saturasi" class="oe_inline" style="margin: 5px 5px 5px;"/> %
+                                </div>
+                                <label for="detak_jantung" string="Detak Jantung"/>
+                                <div>
+                                    <field name="detak_jantung" class="oe_inline" style="margin: 5px 5px 5px;"/> per menit
+                                </div>
+                                <field name="alergi" string="Alergi" style="margin: 5px 5px 5px;"/>
+                                <field name="alergi_makanan" string="Alergi Makanan" attrs="{'invisible' : [('alergi', '=', False)]}" class="oe_inline" style="margin: 5px 5px 5px;"/>
+                                <field name="alergi_obat" string="Alergi Obat" attrs="{'invisible' : [('alergi', '=', False)]}" class="oe_inline" style="margin: 5px 5px 5px;"/>
+                                <separator colspan='2' string='Anthropometri' style="font-size: 25px; margin-bottom:25px;"/>
+                                <label for="tinggi_badan" string="Tinggi Badan"/>
+                                <div>
+                                    <field name="tinggi_badan" class="oe_inline" style="margin: 5px 5px 5px;"/> cm
+                                </div>
+                                <label for="berat_badan" string="Berat Badan"/>
+                                <div>
+                                    <field name="berat_badan" class="oe_inline" style="margin: 5px 5px 5px;"/> kg
+                                </div>
+                                <label for="imt" string="IMT"/>
+                                <div>
+                                    <field name="imt" class="oe_inline" style="margin: 5px 5px 5px;"/>
+                                </div>
+                                <label for="lingkar_perut" string="Lingkar Perut"/>
+                                <div>
+                                    <field name="lingkar_perut" class="oe_inline" style="margin: 5px 5px 5px;"/> cm
+                                </div>
+                                <label for="lingkar_panggul" string="Lingkar Panggul"/>
+                                <div>
+                                    <field name="lingkar_panggul" class="oe_inline" style="margin: 5px 5px 5px;"/> cm
+                                </div>
+                                <separator colspan='2' string='Peringatan' style="font-size: 25px; margin-bottom:25px;"/>
+                                <field name="peringatan_interpretasi_imt" readonly="1" string="Peringatan Interpretasi IMT"/>
+                                <field name="peringatan_alergi" readonly="1" string="Peringatan Alergi"/>
+                            </group>
+                            <group>
+                                <separator colspan='2' string='Profil Keluarga' style="font-size: 25px; margin-bottom:25px;"/>
+                                <field name="nama_kk" string="Nama KK" options="{'no_edit':True,'no_create':True, 'no_open' : True}" style="margin: 5px 5px 5px;"/>
+                                <field name="alamat_kk" style="margin: 5px 5px 5px;"/>
+                                <field name="nomer_kk" style="margin: 5px 5px 5px;"/>
+                                <field name="no_hp_kk" style="margin: 5px 5px 5px;"/>
+                                <field name="email_kk" style="margin: 5px 5px 5px;"/>
+                                <separator colspan='2' string='Kondisi Rumah Tinggal' style="font-size: 25px; margin-bottom:25px;"/>
+                                <field name="jenis_atap_rumah" style="margin: 5px 5px 5px;"/>
+                                <field name="jenis_dinding_rumah" style="margin: 5px 5px 5px;"/>
+                                <field name="jenis_lantai_rumah_terluas" style="margin: 5px 5px 5px;"/>
+                                <field name="sumber_penerangan_utama" style="margin: 5px 5px 5px;"/>
+                                <field name="sumber_air_minum_utama" style="margin: 5px 5px 5px;"/>
+                                <field name="fasilitas_buang_air_besar" style="margin: 5px 5px 5px;"/>
+                                <field name="bangunan_keseluruhan" style="margin: 5px 5px 5px;"/>
+                                <field name="jumlah_orang_rumah" style="margin: 5px 5px 5px;"/>
+                                <field name="bahan_bakar_masak" style="margin: 5px 5px 5px;"/>
+                                <field name="kepemilikan_rumah" style="margin: 5px 5px 5px;"/>
+                            </group>
+                            <group>
+                                <separator colspan='2' string='Gaya Hidup Keluarga' style="font-size: 25px; margin-bottom:25px;"/>
+                                <field name="ghk_merokok" widget="radio"/>
+                                <field name="ghk_alkohol" widget="radio"/>
+                                <field name="ghk_olahraga" widget="radio"/>
+                                <field name="ghk_makan_sayur" widget="radio"/>
+                            </group>
+                            <group>
+                                <separator colspan='2' string='Quisioner' style="font-size: 25px; margin-bottom:25px;"/>
+                                <field name="kb_pk" string="Apakah Mendapat Informasi Keluarga Berencana dan Pembangunan Keluarga dari Media?"/>
+                                <br/>
+                                <field name="informasi_diperoleh" attrs="{'invisible': [('kb_pk', '=', False)]}" string="Informasi Diperoleh Dari?"/>
+                                <br/>
+                                <field name="kb_kp_petugas" string="Apakah Mendapat Informasi Keluarga Berencana dan Pembangunan Keluarga dari Petugas?"/>
+                                <br/>
+                                <field name="keluarga_informasi_diperoleh" attrs="{'invisible' : [('kb_kp_petugas', '=', False)]}" string="Informasi Diperoleh Dari?"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hospital_perawat_triase_action" model="ir.actions.act_window">
+            <field name="name">Perawat (Triase)</field>
+            <field name="res_model">hospital.perawat</field>
+            <field name="view_mode">form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                Create Your First Triase!
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="perawat_triase_root_menu" parent="hospital_root_menu" name="Perawat"/>
+        <menuitem id="perawat_triase_sub_menu" parent="perawat_triase_root_menu" name="Perawat (Triase)" sequence="01" action="hospital_perawat_triase_action"/>
+
+    </data>
+
+
+</odoo>

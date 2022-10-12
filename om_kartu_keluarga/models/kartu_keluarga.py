@@ -17,7 +17,7 @@ class kartu_keluarga(models.Model):
     kecamatan_id = fields.Many2one('kecamatan',related="name_id.kecamatan_id",string='Kecamatan', readonly=True)
     kota_id = fields.Many2one('city',related="name_id.kota_id",string='Kabupatan/Kota', readonly=True)
     provinsi_id = fields.Many2one('country.state',related="name_id.provinsi_id",string='Provinsi', readonly=True)
-    kepala_keluarga = fields.Boolean(related="name_id.kepala_keluarga", string='Kepala Keluarga')
+    kepala_keluarga = fields.Boolean(related="name_id.kepala_keluarga", string='Kepala Keluarga', store=True)
     partner_ids = fields.One2many('partner','kartu_keluarga_id',string='Partner_ids')
     
     _sql_constraints = [

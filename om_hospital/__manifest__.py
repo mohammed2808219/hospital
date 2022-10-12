@@ -12,6 +12,7 @@
         ],
     'data': [
         "security/ir.model.access.csv",
+        "data/code_alasan_datang.xml",
         "data/data.xml",
         'wizard\create_appointmen_view.xml',
         "views/hospital_view.xml",
@@ -19,6 +20,7 @@
         "views/kids_view.xml",
         "views/gender_view.xml",
         "views/appointmen_view.xml",
+        "views/perawat_triase_view.xml",
     ],
     'demo': [],
     'qweb': [],
