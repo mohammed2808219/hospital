@@ -9,7 +9,7 @@
                 <field name="name"/>
                 <field name="name_id"/>
                 <field name="nik_kepala_keluarga"/>
-                <field name="no_kartu_keluarga"/>
+                <field name="nik_kepala_keluarga"/>
             </tree>
         </field>
     </record>
@@ -22,8 +22,8 @@
                 <sheet>
                         <div class="oe_title">
                             <h1>
-                                <label for="no_kartu_keluarga" class="oe_edit_only" string="Nomor Kartu Keluarga : " style="font-size: 25px;"/>
-                                <field name="no_kartu_keluarga" readonly="1"/><br/><br/>
+                                <label for="nik_kepala_keluarga" class="oe_edit_only" string="NIK Kepala Keluarga : " style="font-size: 25px;"/>
+                                <field name="nik_kepala_keluarga" readonly="1"/><br/><br/>
                             </h1>
                         </div>
                         <group>
@@ -43,7 +43,7 @@
                         </group>
                         <notebook>
                             <page string="Data Keluarga">
-                                <field name="partner_ids" context="{'default_no_kartu_keluarga': no_kartu_keluarga}" attrs="{'readonly':[('kepala_keluarga','=',False)]}">
+                                <field name="partner_ids" context="{'default_nik_kepala_keluarga': nik_kepala_keluarga}" attrs="{'readonly':[('kepala_keluarga','=',False)]}">
                                     <tree>
                                         <field name="name" />
                                         <field name="jenis_kelamin"/>
@@ -78,7 +78,7 @@
                                         NIK: <field name="nik_kepala_keluarga" />
                                     </li>
                                     <li>
-                                        Nomor kartu Keluarga: <field name="no_kartu_keluarga" />
+                                        Nomor kartu Keluarga: <field name="nik_kepala_keluarga" />
                                     </li>
                                 </ul>
                             </div>
@@ -96,7 +96,7 @@
             <search string="search coustom">
                 <field name="name_id"/>
                 <field name="nik_kepala_keluarga"/>
-                <field name="no_kartu_keluarga"/>
+                <field name="nik_kepala_keluarga"/>
             </search>
         </field>
     </record>

@@ -42,7 +42,7 @@ class HospitalPerawat(models.Model):
     fasilitas_buang_air_besar = fields.Selection([('ya_dengan_septic_tank', 'Ya, dengan Septic'), (
         'ya_tanpa_septictank', 'Ya, Tanpa Septic Tank'), ('tidak_jamban_umum-bersama', 'Tidak, Jamban Umum/Bersama'), ('lainnya', 'Lainnya')])
     bangunan_keseluruhan = fields.Integer(
-        string="Luas rumah/bangunan keseluruhan (m2)?")
+        string="Luas bangunan keseluruhan (m2)?")
     jumlah_orang_rumah = fields.Integer(
         string="Jumlah orang dalam satu rumah?")
     bahan_bakar_masak = fields.Selection([('listrik-gas', 'Listrik/Gas'), ('minyak_tanah',
@@ -65,7 +65,7 @@ class HospitalPerawat(models.Model):
 
     nama_kk = fields.Many2one(comodel_name="partner", string="Nama KK", domain=[('kepala_keluarga', '=', True)])
     alamat_kk = fields.Char(related="nama_kk.alamat", string="Alamat", readonly=True)
-    nomer_kk = fields.Char(related="nama_kk.no_kartu_keluarga", string="Nomer KK", readonly=True)
+    nomer_kk = fields.Char(related="nama_kk.nik_kepala_keluarga", string="Nomer KK", readonly=True)
     no_hp_kk = fields.Char(related="nama_kk.no_hp", string="No HP", readonly=True)
     email_kk = fields.Char(related="nama_kk.email", string="Email", readonly=True)
 

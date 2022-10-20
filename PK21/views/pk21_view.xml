@@ -30,7 +30,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'sts_hubungan')]</field>
+        <field name="domain">[('value','=', 'sts_hubungan')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -43,7 +43,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'sts_kawin')]</field>
+        <field name="domain">[('value','=', 'sts_kawin')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -56,7 +56,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'id_pekerjaan')]</field>
+        <field name="domain">[('value','=', 'id_pekerjaan')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -69,7 +69,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'jns_pendidikan')]</field>
+        <field name="domain">[('value','=', 'jns_pendidikan')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -82,7 +82,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'kb7')]</field>
+        <field name="domain">[('value','=', 'kb7')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -96,7 +96,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk19')]</field>
+        <field name="domain">[('value','=', 'pk19')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -109,7 +109,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk20')]</field>
+        <field name="domain">[('value','=', 'pk20')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -122,7 +122,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk21')]</field>
+        <field name="domain">[('value','=', 'pk21')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -135,7 +135,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk22')]</field>
+        <field name="domain">[('value','=', 'pk22')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -148,7 +148,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk23')]</field>
+        <field name="domain">[('value','=', 'pk23')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -161,7 +161,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk24')]</field>
+        <field name="domain">[('value','=', 'pk24')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -174,7 +174,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk27')]</field>
+        <field name="domain">[('value','=', 'pk27')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -188,7 +188,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk28')]</field>
+        <field name="domain">[('value','=', 'pk28')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
@@ -203,7 +203,7 @@
         <field name="name">Action Name</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
-        <field name="domain">[('name','=', 'pk19')]</field>
+        <field name="domain">[('value','=', 'pk19')]</field>
         <field name="help" type="html">
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">

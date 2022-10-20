@@ -6,6 +6,7 @@
         <field name="model">partner</field>
         <field name="arch" type="xml">
             <tree>
+                <field name="rekam_medis" />
                 <field name="name" />
                 <field name="nik" />
                 <field name="jenis_kelamin" />
@@ -13,7 +14,6 @@
                 <field name="tgl_lahir" />
                 <field name="agama" />
                 <field name="pendidikan" />
-                <field name="jenis_pekerjaan" />
             </tree>
         </field>
     </record>
@@ -26,7 +26,7 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            NEW
+                            <field name="rekam_medis"/>
                         </h1>
                     </div>
                     <group>
@@ -39,12 +39,12 @@
                             <field name="tgl_lahir"></field>
                             <field name="jenis_kelamin"></field>
                             <field name="tempat_lahir"></field>
-                            <field name="related_status_perkawinan" attrs="{'invisible':True}"></field>
-                            <field name="status_perkawinan" options="{'no_open':True,'no_create':True}"></field>
-                            <label for="usia_kawin_pertama_tahun" string="usia kawin pertama" attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}"/>
-                                <div attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}">
-                                    tahun :<field colspan='4' name="usia_kawin_pertama_tahun" attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}" class="oe_inline"></field>
-                                    bulan :<field colspan='4' name="usia_kawin_pertama_bulan" attrs="{'invisible':['|',('related_status_perkawinan','=',1),('related_status_perkawinan','=', 0)]}" class="oe_inline"></field>
+                            <field name="related_sts_kawin" attrs="{'invisible':True}"></field>
+                            <field name="sts_kawin" options="{'no_open':True,'no_create':True}"></field>
+                            <label for="usia_kawin_pertama_tahun" string="usia kawin pertama" attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}"/>
+                                <div attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}">
+                                    tahun :<field colspan='4' name="usia_kawin_pertama_tahun" attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}" class="oe_inline"></field>
+                                    bulan :<field colspan='4' name="usia_kawin_pertama_bulan" attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}" class="oe_inline"></field>
                                 </div>
                             <field name="golongan_darah"></field>
                             <field name="kb3" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}" options="{'no_open':True,'no_create':True}"></field>
@@ -66,40 +66,40 @@
                         </group>
                         <group>
                             <separator colspan='2' string='Data Keluarga' style="font-size: 25px;"/>
-                            <field name="pk4"></field>
-                            <field name="pk5"></field>
-                            <field name="pk6"></field>
+                            <field name="pk4" string="Selama 6 (enam) bulan terakhir, terdapat paling sedikit 1 (satu) anggota keluarga yang memiliki sumber penghasilan untuk memenuhi kebutuhan pokok per bulan"/><br/>
+                            <field name="pk5" string="Selama 6 (enam) bulan terakhir, setiap anggota keluarga makan “makanan beragam” (makanan pokok, sayur/buah dan lauk) paling sedikit 2 (dua) kali sehari"/><br/>
+                            <field name="pk6" string="Keluarga memiliki tabungan/simpanan (uang kontan, perhiasan, hewan ternak, hasil kebun, dll) yang dapat digunakan sewaktu-waktu untuk memenuhi kebutuhan pokok dalam 3 (tiga) bulan ke depan"/><br/>
                             <field name="kb7" options="{'no_open':True,'no_create':True}"></field>
                             <field name="pk19" options="{'no_open':True,'no_create':True}"></field>
                             <field name="pk27" options="{'no_open':True,'no_create':True}"></field>
                             <field name="pk28" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="pk20" options="{'no_open':True,'no_create':True}"/>
+                            <field name="pk21" options="{'no_open':True,'no_create':True}"/>
                             
                         </group>
                         <group>
                             <separator colspan='2' string='Data Keluarga' style="font-size: 25px;"/>
-                            <field name="no_kartu_keluarga"></field>
+                            <field name="nik_kepala_keluarga"></field>
+                            <field name="sts_hubungan" options="{'no_open':True,'no_create':True}"></field>
                             <field name="kepala_keluarga"></field>
-                            <field name="status_keluarga" options="{'no_open':True,'no_create':True}"></field>
                             <field name="kewarganegaraan"></field>
-                            <label for="kba1" string="Berapa jumlah anak lahir hidup" attrs="{'invisible':[('kepala_keluarga','=',False)]}"></label>
-                            <div attrs="{'invisible':[('kepala_keluarga','=',False)]}">   
+                            <label for="kba1" string="Berapa jumlah anak lahir hidup" attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}"></label>
+                            <div attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}">   
                                     laki-laki:<field colspan='2' name="kba1"  width="20"></field>
                                     perempuan:<field colspan='2' name="kba2"  width="20"></field>
                             </div>
-                            <label for="kbb1" string="Berapa jumlah anak masih hidup" attrs="{'invisible':[('kepala_keluarga','=',False)]}"></label>
-                            <div attrs="{'invisible':[('kepala_keluarga','=',False)]}">
+                            <label for="kbb1" string="Berapa jumlah anak masih hidup" attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}"></label>
+                            <div attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}">
                                 laki-laki:<field colspan='8' name="kbb1" ></field>
                                 perempuan:<field colspan='8' name="kbb2" ></field>
                             </div>
-                            <field name="kb1" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}"></field>
-                            <field name="kd_ibukandung" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}"></field>
-                            <field name="pk22" options="{'no_open':True,'no_create':True}"></field>
-                            <field name="pk23" options="{'no_open':True,'no_create':True}"></field>
-                            <field name="pk24" options="{'no_open':True,'no_create':True}"></field>
-                            <field name="pk25"></field>
-                            <field name="pk26"></field>
-                            <field name="pk20" options="{'no_open':True,'no_create':True}"></field>
-                            <field name="pk21" options="{'no_open':True,'no_create':True}"></field>
+                            <field name="kb1" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}"/>
+                            <field name="kd_ibukandung" attrs="{'invisible':['|',('jenis_kelamin','=','1'),('jenis_kelamin','=', False)]}"/>
+                            <field name="pk22" options="{'no_open':True,'no_create':True}"/>
+                            <field name="pk23" options="{'no_open':True,'no_create':True}"/>
+                            <field name="pk24" options="{'no_open':True,'no_create':True}"/>
+                            <field name="pk25"/>
+                            <field name="pk26"/><br/>
                         </group>
                     </group>
                 </sheet>

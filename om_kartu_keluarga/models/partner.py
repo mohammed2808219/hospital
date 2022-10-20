@@ -1,3 +1,4 @@
+from traitlets import Instance
 from odoo.exceptions import Warning, ValidationError
 from odoo import api, fields, models, _
 from datetime import datetime
@@ -8,7 +9,8 @@ class Partner(models.Model):
     
     
     name = fields.Char(string='Nama Pasien')
-    no_kartu_keluarga = fields.Char(string='Nomor Kartu Keluarga')
+    rekam_medis = fields.Char(string='No. Rekam Medis', default=lambda self: _('New'), readonly=True)
+    nik_kepala_keluarga = fields.Char(string='NIK Kepala Keluarga', required=True)
     kepala_keluarga = fields.Boolean(string='Kepala Keluarga')
     alamat = fields.Char(string='Alamat')
     kode_pos = fields.Char(string='Kode Pos')
@@ -16,13 +18,13 @@ class Partner(models.Model):
     kota_id = fields.Many2one('city',string='Kota/Kabupaten',domain="[('state_id','=',provinsi_id)]")
     kecamatan_id = fields.Many2one('kecamatan',string='Kecamatan',domain="[('city_id','=',kota_id)]")
     kelurahan_id = fields.Many2one('kelurahan',string='Kelurahan/Desa', domain="[('kecamatan_id','=',kecamatan_id)]")
-    nik = fields.Char(string='NIK')
+    nik = fields.Char(string='NIK', required=True)
     jenis_kelamin = fields.Selection([('1','laki-laki'),('2','perempuan')],string='Jenis Kelamin')
     tempat_lahir = fields.Char(string='Tempat Lahir')
     tgl_lahir = fields.Date(string='Tanggal Lahir')
     agama = fields.Char(string='Agama')
-    pendidikan = fields.Many2one(comodel_name="pk21",string='Pendidikan', domain="[('name','=','jns_pendidikan')]")
-    jenis_pekerjaan = fields.Many2one(comodel_name="pk21",string='Jenis Pekerjaan', domain="[('name','=','id_pekerjaan')]")
+    pendidikan = fields.Many2one(comodel_name="pk21",string='Pendidikan', domain="[('value','=','jns_pendidikan')]")
+    jenis_pekerjaan = fields.Many2one(comodel_name="pk21",string='Jenis Pekerjaan', domain="[('value','=','id_pekerjaan')]")
     no_hp = fields.Char(string='Nomor HP')
     email = fields.Char(string='Email')
     golongan_darah = fields.Selection([
@@ -39,8 +41,8 @@ class Partner(models.Model):
         ('b-','B-'),
         ('ab-','AB-'),
         ], string='Golongan Darah')
-    status_keluarga = fields.Many2one(comodel_name="pk21",string='Status di Keluarga', domain="[('name','=','sts_hubungan')]")
-    status_perkawinan = fields.Many2one(comodel_name="pk21",string='Status Perkawinan', domain="[('name','=','sts_kawin')]")
+    sts_hubungan = fields.Many2one(comodel_name="pk21",string='Status di Keluarga', domain="[('value','=','sts_hubungan')]")
+    sts_kawin = fields.Many2one(comodel_name="pk21",string='Status Perkawinan', domain="[('value','=','sts_kawin')]")
     usia_kawin_pertama_tahun = fields.Integer(string='Usia Kawin Pertama')
     usia_kawin_pertama_bulan = fields.Selection([
         ('1','1'),
@@ -64,20 +66,20 @@ class Partner(models.Model):
     kb3=fields.Selection([('1','ya'),('2','tidak')],string="Apakah ibu sedang hamil?")
     # kalau ya
     kb3a1_usiahamil=fields.Integer(string="Usia Kehamilan")
-    kb7=fields.Many2one(comodel_name="pk21",string="Jenis alat/obat/cara KB", domain="[('name','=','kb7')]")
-    pk4=fields.Selection([('1','ya'),('2','tidak')],string="Selama 6 (enam) bulan terakhir, terdapat paling sedikit 1 (satu) anggota keluarga yang memiliki sumber penghasilan untuk memenuhi kebutuhan pokok per bulan")
-    pk5=fields.Selection([('1','ya'),('2','tidak')],string="Selama 6 (enam) bulan terakhir, setiap anggota keluarga makan “makanan beragam” (makanan pokok, sayur/buah dan lauk) paling sedikit 2 (dua) kali sehari")
-    pk6=fields.Selection([('1','ya'),('2','tidak')],string="Keluarga memiliki tabungan/simpanan (uang kontan, perhiasan, hewan ternak, hasil kebun, dll) yang dapat digunakan sewaktu-waktu untuk memenuhi kebutuhan pokok dalam 3 (tiga) bulan ke depan")
-    pk19=fields.Many2one(comodel_name="pk21",string="Jenis atap rumah terluas", domain="[('name','=','pk19')]")
-    pk20=fields.Many2one(comodel_name="pk21",string="Jenis dinding rumah terluas", domain="[('name','=','pk20')]")
-    pk21=fields.Many2one(comodel_name="pk21",string="Jenis lantai rumah terluas", domain="[('name','=','pk21')]")
-    pk22=fields.Many2one(comodel_name="pk21",string="Sumber penerangan utama", domain="[('name','=','pk22')]")
-    pk23=fields.Many2one(comodel_name="pk21",string="Sumber air minum utama", domain="[('name','=','pk23')]")
-    pk24=fields.Many2one(comodel_name="pk21",string="Memiliki fasilitas tempat buang air besar", domain="[('name','=','pk24')]")
+    kb7=fields.Many2one(comodel_name="pk21",string="Jenis alat/obat/cara KB", domain="[('value','=','kb7')]")
+    pk4=fields.Boolean()
+    pk5=fields.Boolean()
+    pk6=fields.Boolean()
+    pk19=fields.Many2one(comodel_name="pk21",string="Jenis atap rumah terluas", domain="[('value','=','pk19')]")
+    pk20=fields.Many2one(comodel_name="pk21",string="Jenis dinding rumah terluas", domain="[('value','=','pk20')]")
+    pk21=fields.Many2one(comodel_name="pk21",string="Jenis lantai rumah terluas", domain="[('value','=','pk21')]")
+    pk22=fields.Many2one(comodel_name="pk21",string="Sumber penerangan utama", domain="[('value','=','pk22')]")
+    pk23=fields.Many2one(comodel_name="pk21",string="Sumber air minum utama", domain="[('value','=','pk23')]")
+    pk24=fields.Many2one(comodel_name="pk21",string="Memiliki fasilitas tempat buang air besar", domain="[('value','=','pk24')]")
     pk25=fields.Integer(string="Luas rumah/bangunan keseluruhan m2")
-    pk26=fields.Integer(string="Luas rumah/bangunan keseluruhan m2")
-    pk27=fields.Many2one(comodel_name="pk21",string="Bahan bakar utama untuk memasak", domain="[('name','=','pk27')]")
-    pk28=fields.Many2one(comodel_name="pk21",string="Kepemilikan rumah/bangunan tempat tinggal", domain="[('name','=','pk28')]")
+    pk26=fields.Integer(string="Jumlah orang yang tinggal dan menetap di rumah/bangunan ini")
+    pk27=fields.Many2one(comodel_name="pk21",string="Bahan bakar utama untuk memasak", domain="[('value','=','pk27')]")
+    pk28=fields.Many2one(comodel_name="pk21",string="Kepemilikan rumah/bangunan tempat tinggal", domain="[('value','=','pk28')]")
     # Berapa jumlah anak lahir hidup
     kba1=fields.Integer(string="-Laki - Laki")
     kba2=fields.Integer(string="-Perempuan")
@@ -88,19 +90,38 @@ class Partner(models.Model):
     kb1=fields.Integer(string="Sudah berapa kali Ibu melahirkan")
     kd_ibukandung=fields.Integer(string="Kode Ibu Kandung")
     # tgl_lahir=fields.Char(string="Tanggal Lahir")
-    related_status_perkawinan = fields.Integer(related='status_perkawinan.kode', string='Status Perkawinan', store=True)
+    related_sts_kawin = fields.Integer(related='sts_kawin.kode', string='Status Perkawinan', store=True)
     
     
     _sql_constraints = [
         ('nik_uniq', 'unique(nik)', 'NIK sudah ada !'),
     ]
     
+    
     @api.model
     def create(self,vals):
-        if not vals.get('nik').isdigit() :
-            raise ValidationError('Perhatian!\nNIK harus angkah.')
-        elif not vals.get('no_kartu_keluarga').isdigit():
-            raise ValidationError('Perhatian!\nNomor Kartu Keluarga harus angkah.')
+        if vals.get('rekam_medis', _('New')) == _('New'):
+            vals['rekam_medis']= self.env['ir.sequence'].next_by_code('partner') or _('New')
+            
+        if vals.get('nik'):
+            if not vals.get('nik').isdigit() :
+                raise ValidationError('Perhatian!\nNIK harus angkah.')
+            if len(vals.get('nik')) != 16 :
+                raise ValidationError('Perhatian!\nNIK harus 16 angkah.')
+        if vals.get('nik_kepala_keluarga'):
+            if not vals.get('nik_kepala_keluarga').isdigit():
+                raise ValidationError('Perhatian!\nNomor Kartu Keluarga harus angkah.')
+            elif len(vals.get('nik_kepala_keluarga')) != 16 :
+                raise ValidationError('Perhatian!\nNomor Kartu Keluarga harus 16 angkah.')
+            elif vals.get('kepala_keluarga') == True:
+                nik_kepala_true = self.search([('nik_kepala_keluarga','=',vals.get('nik_kepala_keluarga')),('kepala_keluarga','=',True)])
+                if nik_kepala_true:
+                    raise ValidationError('Perhatian!\nkepala Keluarga untuk NIK ini sudah ada.')
+            
+        if not vals.get('provinsi_id'):
+            vals['provinsi_id'] = 40 # 40 adalah id provinsi Lampung
+        if vals.get('sts_hubungan') == '1':
+            vals['kepala_keluarga'] = True
         return super(Partner,self).create(vals)
     
     
@@ -108,9 +129,21 @@ class Partner(models.Model):
         if vals.get('nik'):
             if not vals.get('nik').isdigit() :
                 raise ValidationError('Perhatian!\nNIK harus angkah.')
-        if vals.get('no_kartu_keluarga'):
-            if not vals.get('no_kartu_keluarga').isdigit():
+            if len(vals.get('nik')) != 16 :
+                raise ValidationError('Perhatian!\nNIK harus 16 angkah.')
+        if vals.get('nik_kepala_keluarga'):
+            if not vals.get('nik_kepala_keluarga').isdigit():
                 raise ValidationError('Perhatian!\nNomor Kartu Keluarga harus angkah.')
+            elif len(vals.get('nik_kepala_keluarga')) != 16 :
+                raise ValidationError('Perhatian!\nNomor Kartu Keluarga harus 16 angkah.')
+        if vals.get('kepala_keluarga') == True:
+            nik_kepala_true = self.search([('nik_kepala_keluarga','=',self.nik_kepala_keluarga),('kepala_keluarga','=',True)])
+            if nik_kepala_true:
+                raise ValidationError('Perhatian!\nkepala Keluarga untuk NIK ini sudah ada.')
+        
+        if vals.get('sts_hubungan') == '1':
+            vals['kepala_keluarga'] = True
+            
         return super(Partner,self).write(vals)
     
     
@@ -118,7 +151,7 @@ class Partner(models.Model):
     def name_search(self,name,args=None,operator='ilike',limit=100):
         args =  args or []
         if name:
-            args = ['|','|',('name',operator,name),('no_kartu_keluarga',operator,name),('nik',operator,name)]
+            args = ['|','|',('name',operator,name),('nik_kepala_keluarga',operator,name),('nik',operator,name),('kepala_keluarga','=',True)]
         categorys = self.search(args, limit=limit)
         return categorys.name_get()
 

@@ -62,17 +62,6 @@ class PK21(models.Model):
     
     
     
-    def name_get(self):
-        if self._context is None:
-            self._context = {}
-        res = []
-        for record in self:
-            tit = "%s" % (record.value)
-            res.append((record.id, tit))
-        return res
-        
-    
-    
     
     
 

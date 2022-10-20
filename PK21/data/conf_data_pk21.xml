@@ -3,496 +3,496 @@
 
     <data>
         <record id="id_kode_sts_hubungan1" model="pk21">
-            <field name="name">sts_hubungan</field>
+            <field name="value">sts_hubungan</field>
             <field name="name_Pertanyaan">Hubungan dengan kepala keluarga</field>
             <field name="kode">1</field>
-            <field name="value">kepala keluarga</field>
+            <field name="name">kepala keluarga</field>
         </record>
         <record id="id_kode_sts_hubungan2" model="pk21">
-            <field name="name">sts_hubungan</field>
+            <field name="value">sts_hubungan</field>
             <field name="name_Pertanyaan">Hubungan dengan kepala keluarga</field>
             <field name="kode">2</field>
-            <field name="value">istri</field>
+            <field name="name">istri</field>
         </record>
         <record id="id_kode_sts_hubungan3" model="pk21">
-            <field name="name">sts_hubungan</field>
+            <field name="value">sts_hubungan</field>
             <field name="name_Pertanyaan">Hubungan dengan kepala keluarga</field>
             <field name="kode">3</field>
-            <field name="value">anak</field>
+            <field name="name">anak</field>
         </record>
         <record id="id_kode_sts_hubungan4" model="pk21">
-            <field name="name">sts_hubungan</field>
+            <field name="value">sts_hubungan</field>
             <field name="name_Pertanyaan">Hubungan dengan kepala keluarga</field>
             <field name="kode">4</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_status_perkawinan1" model="pk21">
-            <field name="name">sts_kawin</field>
+            <field name="value">sts_kawin</field>
             <field name="name_Pertanyaan">Status perkawinan</field>
             <field name="kode">1</field>
-            <field name="value">belum kawin</field>
+            <field name="name">belum kawin</field>
         </record>
         <record id="id_kode_status_perkawinan2" model="pk21">
-            <field name="name">sts_kawin</field>
+            <field name="value">sts_kawin</field>
             <field name="name_Pertanyaan">Status perkawinan</field>
             <field name="kode">2</field>
-            <field name="value">kawin</field>
+            <field name="name">kawin</field>
         </record>
         <record id="id_kode_status_perkawinan3" model="pk21">
-            <field name="name">sts_kawin</field>
+            <field name="value">sts_kawin</field>
             <field name="name_Pertanyaan">Status perkawinan</field>
             <field name="kode">3</field>
-            <field name="value">cerai hidup</field>
+            <field name="name">cerai hidup</field>
         </record>
         <record id="id_kode_status_perkawinan4" model="pk21">
-            <field name="name">sts_kawin</field>
+            <field name="value">sts_kawin</field>
             <field name="name_Pertanyaan">Status perkawinan</field>
             <field name="kode">4</field>
-            <field name="value">cerai mati</field>
+            <field name="name">cerai mati</field>
         </record>
         <record id="id_kode_Status_pekerjaan1" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">1</field>
-            <field name="value">tidak/belum bekerja</field>
+            <field name="name">tidak/belum bekerja</field>
         </record>
         <record id="id_kode_Status_pekerjaan2" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">2</field>
-            <field name="value">petani</field>
+            <field name="name">petani</field>
         </record>
         <record id="id_kode_Status_pekerjaan3" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">3</field>
-            <field name="value">nelayan</field>
+            <field name="name">nelayan</field>
         </record>
         <record id="id_kode_Status_pekerjaan4" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">4</field>
-            <field name="value">pedagang</field>
+            <field name="name">pedagang</field>
         </record>
         <record id="id_kode_Status_pekerjaan5" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">5</field>
-            <field name="value">pejabat negara</field>
+            <field name="name">pejabat negara</field>
         </record>
         <record id="id_kode_Status_pekerjaan6" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">6</field>
-            <field name="value">PNS/TNI/ POLRI</field>
+            <field name="name">PNS/TNI/ POLRI</field>
         </record>
         <record id="id_kode_Status_pekerjaan7" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">7</field>
-            <field name="value">pegawai swasta</field>
+            <field name="name">pegawai swasta</field>
         </record>
         <record id="id_kode_Status_pekerjaan8" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">8</field>
-            <field name="value">wiraswasta</field>
+            <field name="name">wiraswasta</field>
         </record>
         <record id="id_kode_Status_pekerjaan9" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">9</field>
-            <field name="value">pensiunan</field>
+            <field name="name">pensiunan</field>
         </record>
         <record id="id_kode_Status_pekerjaan10" model="pk21">
-            <field name="name">id_pekerjaan</field>
+            <field name="value">id_pekerjaan</field>
             <field name="name_Pertanyaan">Status pekerjaan</field>
             <field name="kode">10</field>
-            <field name="value">pekerja lepas</field>
+            <field name="name">pekerja lepas</field>
         </record>
         <record id="id_kode_Pendidikan1" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">1</field>
-            <field name="value">tidak/belum sekolah</field>
+            <field name="name">tidak/belum sekolah</field>
         </record>
         <record id="id_kode_Pendidikan2" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">2</field>
-            <field name="value">tidak tamat SD/ sederajat</field>
+            <field name="name">tidak tamat SD/ sederajat</field>
         </record>
         <record id="id_kode_Pendidikan3" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">3</field>
-            <field name="value">masih SD/sederajat</field>
+            <field name="name">masih SD/sederajat</field>
         </record>
         <record id="id_kode_Pendidikan4" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">4</field>
-            <field name="value">tamat SD/sederajat</field>
+            <field name="name">tamat SD/sederajat</field>
         </record>
         <record id="id_kode_Pendidikan5" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">5</field>
-            <field name="value">masih SLTP/sederajat</field>
+            <field name="name">masih SLTP/sederajat</field>
         </record>
         <record id="id_kode_Pendidikan6" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">6</field>
-            <field name="value">tamat SLTP/sederajat</field>
+            <field name="name">tamat SLTP/sederajat</field>
         </record>
         <record id="id_kode_Pendidikan7" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">7</field>
-            <field name="value">masih SLTA/sederajat</field>
+            <field name="name">masih SLTA/sederajat</field>
         </record>
         <record id="id_kode_Pendidikan8" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">8</field>
-            <field name="value">tamat SLTA/sederajat</field>
+            <field name="name">tamat SLTA/sederajat</field>
         </record>
         <record id="id_kode_Pendidikan9" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">9</field>
-            <field name="value">masih PT/ akademi</field>
+            <field name="name">masih PT/ akademi</field>
         </record>
         <record id="id_kode_Pendidikan10" model="pk21">
-            <field name="name">jns_pendidikan</field>
+            <field name="value">jns_pendidikan</field>
             <field name="name_Pertanyaan">Pendidikan</field>
             <field name="kode">10</field>
-            <field name="value">tamat PT/akademi</field>
+            <field name="name">tamat PT/akademi</field>
         </record>
         <record id="id_kode_kb7_1" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">1</field>
-            <field name="value">MOW/steril wanita</field>
+            <field name="name">MOW/steril wanita</field>
         </record>
         <record id="id_kode_kb7_2" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">2</field>
-            <field name="value">MOP/steri pria</field>
+            <field name="name">MOP/steri pria</field>
         </record>
         <record id="id_kode_kb7_3" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">3</field>
-            <field name="value">IUD/spiral/AKDR</field>
+            <field name="name">IUD/spiral/AKDR</field>
         </record>
         <record id="id_kode_kb7_4" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">4</field>
-            <field name="value">implant/susuk</field>
+            <field name="name">implant/susuk</field>
         </record>
         <record id="id_kode_kb7_5" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">5</field>
-            <field name="value">suntik</field>
+            <field name="name">suntik</field>
         </record>
         <record id="id_kode_kb7_6" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">6</field>
-            <field name="value">pil</field>
+            <field name="name">pil</field>
         </record>
         <record id="id_kode_kb7_7" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">7</field>
-            <field name="value">kondom</field>
+            <field name="name">kondom</field>
         </record>
         <record id="id_kode_kb7_8" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">8</field>
-            <field name="value">MAL</field>
+            <field name="name">MAL</field>
         </record>
         <record id="id_kode_kb7_9" model="pk21">
-            <field name="name">kb7</field>
+            <field name="value">kb7</field>
             <field name="name_Pertanyaan">Jenis alat/obat/cara KB (kontrasepsi) yang dipakai saat ini atau terakhir dipakai</field>
             <field name="kode">9</field>
-            <field name="value">tradisional</field>
+            <field name="name">tradisional</field>
         </record>
         <record id="id_kode_pk19_1" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">1</field>
-            <field name="value">beton</field>
+            <field name="name">beton</field>
         </record>
         <record id="id_kode_pk19_2" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">2</field>
-            <field name="value">genteng</field>
+            <field name="name">genteng</field>
         </record>
         <record id="id_kode_pk19_3" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">3</field>
-            <field name="value">asbes/seng</field>
+            <field name="name">asbes/seng</field>
         </record>
         <record id="id_kode_pk19_4" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">4</field>
-            <field name="value">kayu/sirap</field>
+            <field name="name">kayu/sirap</field>
         </record>
         <record id="id_kode_pk19_5" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">5</field>
-            <field name="value">bambu</field>
+            <field name="name">bambu</field>
         </record>
         <record id="id_kode_pk19_6" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">6</field>
-            <field name="value">jerami/ijuk/rumbia/daun-daunan</field>
+            <field name="name">jerami/ijuk/rumbia/daun-daunan</field>
         </record>
         <record id="id_kode_pk19_7" model="pk21">
-            <field name="name">pk19</field>
+            <field name="value">pk19</field>
             <field name="name_Pertanyaan">Jenis atap rumah terluas</field>
             <field name="kode">7</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_pk20_1" model="pk21">
-            <field name="name">pk20</field>
+            <field name="value">pk20</field>
             <field name="name_Pertanyaan">Jenis dinding rumah terluas</field>
             <field name="kode">1</field>
-            <field name="value">tembok</field>
+            <field name="name">tembok</field>
         </record>
         <record id="id_kode_pk20_2" model="pk21">
-            <field name="name">pk20</field>
+            <field name="value">pk20</field>
             <field name="name_Pertanyaan">Jenis dinding rumah terluas</field>
             <field name="kode">2</field>
-            <field name="value">kayu/ papan</field>
+            <field name="name">kayu/ papan</field>
         </record>
         <record id="id_kode_pk20_3" model="pk21">
-            <field name="name">pk20</field>
+            <field name="value">pk20</field>
             <field name="name_Pertanyaan">Jenis dinding rumah terluas</field>
             <field name="kode">3</field>
-            <field name="value">seng</field>
+            <field name="name">seng</field>
         </record>
         <record id="id_kode_pk20_4" model="pk21">
-            <field name="name">pk20</field>
+            <field name="value">pk20</field>
             <field name="name_Pertanyaan">Jenis dinding rumah terluas</field>
             <field name="kode">4</field>
-            <field name="value">bambu</field>
+            <field name="name">bambu</field>
         </record>
         <record id="id_kode_pk20_5" model="pk21">
-            <field name="name">pk20</field>
+            <field name="value">pk20</field>
             <field name="name_Pertanyaan">Jenis dinding rumah terluas</field>
             <field name="kode">5</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_pk21_1" model="pk21">
-            <field name="name">pk21</field>
+            <field name="value">pk21</field>
             <field name="name_Pertanyaan">Jenis lantai rumah terluas</field>
             <field name="kode">1</field>
-            <field name="value">keramik/granit/ marmer/ubin/tegel/ teraso</field>
+            <field name="name">keramik/granit/ marmer/ubin/tegel/ teraso</field>
         </record>
         <record id="id_kode_pk21_2" model="pk21">
-            <field name="name">pk21</field>
+            <field name="value">pk21</field>
             <field name="name_Pertanyaan">Jenis lantai rumah terluas</field>
             <field name="kode">2</field>
-            <field name="value">semen</field>
+            <field name="name">semen</field>
         </record>
         <record id="id_kode_pk21_3" model="pk21">
-            <field name="name">pk21</field>
+            <field name="value">pk21</field>
             <field name="name_Pertanyaan">Jenis lantai rumah terluas</field>
             <field name="kode">3</field>
-            <field name="value">kayu/papan</field>
+            <field name="name">kayu/papan</field>
         </record>
         <record id="id_kode_pk21_4" model="pk21">
-            <field name="name">pk21</field>
+            <field name="value">pk21</field>
             <field name="name_Pertanyaan">Jenis lantai rumah terluas</field>
             <field name="kode">4</field>
-            <field name="value">bambu</field>
+            <field name="name">bambu</field>
         </record>
         <record id="id_kode_pk21_5" model="pk21">
-            <field name="name">pk21</field>
+            <field name="value">pk21</field>
             <field name="name_Pertanyaan">Jenis lantai rumah terluas</field>
             <field name="kode">5</field>
-            <field name="value">tanah</field>
+            <field name="name">tanah</field>
         </record>
         <record id="id_kode_pk21_6" model="pk21">
-            <field name="name">pk21</field>
+            <field name="value">pk21</field>
             <field name="name_Pertanyaan">Jenis lantai rumah terluas</field>
             <field name="kode">6</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_pk22_1" model="pk21">
-            <field name="name">pk22</field>
+            <field name="value">pk22</field>
             <field name="name_Pertanyaan">Sumber penerangan utama</field>
             <field name="kode">1</field>
-            <field name="value">listrik pribadi 900 watt</field>
+            <field name="name">listrik pribadi 900 watt</field>
         </record>
         <record id="id_kode_pk22_2" model="pk21">
-            <field name="name">pk22</field>
+            <field name="value">pk22</field>
             <field name="name_Pertanyaan">Sumber penerangan utama</field>
             <field name="kode">2</field>
-            <field name="value">listrik pribadi > 900 watt</field>
+            <field name="name">listrik pribadi > 900 watt</field>
         </record>
         <record id="id_kode_pk22_3" model="pk21">
-            <field name="name">pk22</field>
+            <field name="value">pk22</field>
             <field name="name_Pertanyaan">Sumber penerangan utama</field>
             <field name="kode">3</field>
-            <field name="value">genset/solar cell</field>
+            <field name="name">genset/solar cell</field>
         </record>
         <record id="id_kode_pk22_4" model="pk21">
-            <field name="name">pk22</field>
+            <field name="value">pk22</field>
             <field name="name_Pertanyaan">Sumber penerangan utama</field>
             <field name="kode">4</field>
-            <field name="value"> listrik bersama</field>
+            <field name="name"> listrik bersama</field>
         </record>
         <record id="id_kode_pk22_5" model="pk21">
-            <field name="name">pk22</field>
+            <field name="value">pk22</field>
             <field name="name_Pertanyaan">Sumber penerangan utama</field>
             <field name="kode">5</field>
-            <field name="value">non listrik</field>
+            <field name="name">non listrik</field>
         </record>
         <record id="id_kode_pk23_1" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">1</field>
-            <field name="value">air kemasan/isi ulang</field>
+            <field name="name">air kemasan/isi ulang</field>
         </record>
         <record id="id_kode_pk23_2" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">2</field>
-            <field name="value">ledeng/PAM</field>
+            <field name="name">ledeng/PAM</field>
         </record>
         <record id="id_kode_pk23_3" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">3</field>
-            <field name="value">sumur bor</field>
+            <field name="name">sumur bor</field>
         </record>
         <record id="id_kode_pk23_4" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">4</field>
-            <field name="value">sumur terlindung</field>
+            <field name="name">sumur terlindung</field>
         </record>
         <record id="id_kode_pk23_5" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">5</field>
-            <field name="value">sumur tidak terlindung</field>
+            <field name="name">sumur tidak terlindung</field>
         </record>
         <record id="id_kode_pk23_6" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">6</field>
-            <field name="value">air permukaan (sungai, danau, dll)</field>
+            <field name="name">air permukaan (sungai, danau, dll)</field>
         </record>
         <record id="id_kode_pk23_7" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">7</field>
-            <field name="value">air hujan</field>
+            <field name="name">air hujan</field>
         </record>
         <record id="id_kode_pk23_8" model="pk21">
-            <field name="name">pk23</field>
+            <field name="value">pk23</field>
             <field name="name_Pertanyaan">Sumber air minum utama</field>
             <field name="kode">8</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_pk24_1" model="pk21">
-            <field name="name">pk24</field>
+            <field name="value">pk24</field>
             <field name="name_Pertanyaan">Memiliki fasilitas tempat buang air besar</field>
             <field name="kode">1</field>
-            <field name="value">ya dengan septic tan</field>
+            <field name="name">ya dengan septic tank</field>
         </record>
         <record id="id_kode_pk24_2" model="pk21">
-            <field name="name">pk24</field>
+            <field name="value">pk24</field>
             <field name="name_Pertanyaan">Memiliki fasilitas tempat buang air besar</field>
             <field name="kode">2</field>
-            <field name="value">ya tanpa septic tank</field>
+            <field name="name">ya tanpa septic tank</field>
         </record>
         <record id="id_kode_pk24_3" model="pk21">
-            <field name="name">pk24</field>
+            <field name="value">pk24</field>
             <field name="name_Pertanyaan">Memiliki fasilitas tempat buang air besar</field>
             <field name="kode">3</field>
-            <field name="value"> tidak, jamban umum/bersama</field>
+            <field name="name"> tidak, jamban umum/bersama</field>
         </record>
         <record id="id_kode_pk24_4" model="pk21">
-            <field name="name">pk24</field>
+            <field name="value">pk24</field>
             <field name="name_Pertanyaan">Memiliki fasilitas tempat buang air besar</field>
             <field name="kode">4</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_pk27_1" model="pk21">
-            <field name="name">pk27</field>
+            <field name="value">pk27</field>
             <field name="name_Pertanyaan">Bahan bakar utama untuk memasak</field>
             <field name="kode">1</field>
-            <field name="value">listrik/gas</field>
+            <field name="name">listrik/gas</field>
         </record>
         <record id="id_kode_pk27_2" model="pk21">
-            <field name="name">pk27</field>
+            <field name="value">pk27</field>
             <field name="name_Pertanyaan">Bahan bakar utama untuk memasak</field>
             <field name="kode">2</field>
-            <field name="value">minyak tanah</field>
+            <field name="name">minyak tanah</field>
         </record>
         <record id="id_kode_pk27_3" model="pk21">
-            <field name="name">pk27</field>
+            <field name="value">pk27</field>
             <field name="name_Pertanyaan">Bahan bakar utama untuk memasak</field>
             <field name="kode">3</field>
-            <field name="value">arang/ kayu</field>
+            <field name="name">arang/ kayu</field>
         </record>
         <record id="id_kode_pk27_4" model="pk21">
-            <field name="name">pk27</field>
+            <field name="value">pk27</field>
             <field name="name_Pertanyaan">Bahan bakar utama untuk memasak</field>
             <field name="kode">4</field>
-            <field name="value">lainnya</field>
+            <field name="name">lainnya</field>
         </record>
         <record id="id_kode_pk28_1" model="pk21">
-            <field name="name">pk28</field>
+            <field name="value">pk28</field>
             <field name="name_Pertanyaan">Kepemilikan rumah/bangunan tempat tinggal</field>
             <field name="kode">1</field>
-            <field name="value">milik sendiri</field>
+            <field name="name">milik sendiri</field>
         </record>
         <record id="id_kode_pk28_2" model="pk21">
-            <field name="name">pk28</field>
+            <field name="value">pk28</field>
             <field name="name_Pertanyaan">Kepemilikan rumah/bangunan tempat tinggal</field>
             <field name="kode">2</field>
-            <field name="value">kontrak/sewa</field>
+            <field name="name">kontrak/sewa</field>
         </record>
         <record id="id_kode_pk28_3" model="pk21">
-            <field name="name">pk28</field>
+            <field name="value">pk28</field>
             <field name="name_Pertanyaan">Kepemilikan rumah/bangunan tempat tinggal</field>
             <field name="kode">3</field>
-            <field name="value">bebas sewa</field>
+            <field name="name">bebas sewa</field>
         </record>
         <record id="id_kode_pk28_4" model="pk21">
-            <field name="name">pk28</field>
+            <field name="value">pk28</field>
             <field name="name_Pertanyaan">Kepemilikan rumah/bangunan tempat tinggal</field>
             <field name="kode">4</field>
-            <field name="value">menumpang</field>
+            <field name="name">menumpang</field>
         </record>
         <record id="id_kode_pk28_5" model="pk21">
-            <field name="name">pk28</field>
+            <field name="value">pk28</field>
             <field name="name_Pertanyaan">Kepemilikan rumah/bangunan tempat tinggal</field>
             <field name="kode">5</field>
-            <field name="value">dinas</field>
+            <field name="name">dinas</field>
         </record>
         <record id="id_kode_pk28_6" model="pk21">
-            <field name="name">pk28</field>
+            <field name="value">pk28</field>
             <field name="name_Pertanyaan">Kepemilikan rumah/bangunan tempat tinggal</field>
             <field name="kode">6</field>
-            <field name="value">dinas</field>
+            <field name="name">dinas</field>
         </record>
     
     </data>
