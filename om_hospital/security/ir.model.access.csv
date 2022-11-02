@@ -3,4 +3,5 @@ access_hospital_management,access.hospital.manegement,model_hospital_manegement,
 access_hospital_appointmen,access.hospital.appointmen,model_hospital_appointmen,,1,1,1,1
 access_hospital_perawat,access.hospital.perawat,model_hospital_perawat,,1,1,1,1
 access_alasan_datang,access.alasan.datang,model_alasan_datang,,1,1,1,1
+access_subjektif,access.subjektif,model_subjektif,,1,1,1,1
 

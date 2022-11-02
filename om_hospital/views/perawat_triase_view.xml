@@ -112,10 +112,23 @@
             </field>
         </record>
 
+        <record id="hospital_perawat_view_tree" model="ir.ui.view">
+            <field name="name">hospital.perawat.view.tree</field>
+            <field name="model">hospital.perawat</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="nama_kk"></field>
+                    <field name="nomer_kk"></field>
+                    <field name="imt"></field>
+                    <field name="peringatan_interpretasi_imt"></field>
+                </tree>
+            </field>
+        </record>
+
         <record id="hospital_perawat_triase_action" model="ir.actions.act_window">
             <field name="name">Perawat (Triase)</field>
             <field name="res_model">hospital.perawat</field>
-            <field name="view_mode">form</field>
+            <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                 Create Your First Triase!

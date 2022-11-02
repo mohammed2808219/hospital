@@ -21,6 +21,7 @@
         "views/gender_view.xml",
         "views/appointmen_view.xml",
         "views/perawat_triase_view.xml",
+        "views/medik_view.xml",
     ],
     'demo': [],
     'qweb': [],

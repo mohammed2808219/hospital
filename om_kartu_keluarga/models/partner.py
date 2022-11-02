@@ -151,7 +151,7 @@ class Partner(models.Model):
     def name_search(self,name,args=None,operator='ilike',limit=100):
         args =  args or []
         if name:
-            args = ['|','|',('name',operator,name),('nik_kepala_keluarga',operator,name),('nik',operator,name),('kepala_keluarga','=',True)]
+            args = ['|','|',('name',operator,name),('nik_kepala_keluarga',operator,name),('nik',operator,name)]
         categorys = self.search(args, limit=limit)
         return categorys.name_get()
 

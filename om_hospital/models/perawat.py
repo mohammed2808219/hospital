@@ -68,6 +68,7 @@ class HospitalPerawat(models.Model):
     nomer_kk = fields.Char(related="nama_kk.nik_kepala_keluarga", string="Nomer KK", readonly=True)
     no_hp_kk = fields.Char(related="nama_kk.no_hp", string="No HP", readonly=True)
     email_kk = fields.Char(related="nama_kk.email", string="Email", readonly=True)
+    age = fields.Integer(default='20')
 
     keluhan_ids = fields.Many2many('alasan.datang', string="Alasan Datang")
 
@@ -105,8 +106,8 @@ class HospitalPerawat(models.Model):
     @api.model
     def create(self, vals):
         if vals.get('tinggi_badan') and vals.get('berat_badan'):
-            imt = vals.get('tinggi_badan') / (vals.get('berat_badan') / 100)
-            self.imt = float(imt)
+            imt = vals.get('berat_badan') / (vals.get('tinggi_badan') / 100)
+            vals['imt'] = imt
             if imt < 18.5:
                 vals['peringatan_interpretasi_imt'] = 'kurang'
             elif imt >= 18.5 and imt <= 22.9:
@@ -123,3 +124,26 @@ class HospitalPerawat(models.Model):
             self.imt = 0
             self.peringatan_interpretasi_imt = ''
         return super(HospitalPerawat, self).create(vals)
+    
+    def write(self,vals):
+        
+        tinggi = vals.get('tinggi_badan') or self.tinggi_badan
+        berat = vals.get('berat_badan') or self.berat_badan
+        if tinggi or berat:
+            imt = berat / (tinggi / 100)
+            vals['imt'] = imt
+            if imt < 18.5:
+                vals['peringatan_interpretasi_imt'] = 'kurang'
+            elif imt >= 18.5 and imt <= 22.9:
+                vals['peringatan_interpretasi_imt'] = 'normal'
+            elif imt >= 23 and imt <= 24.9:
+                vals['peringatan_interpretasi_imt'] = 'pre-obesitas'
+            elif imt >= 25 and imt <= 29.9:
+                vals['peringatan_interpretasi_imt'] = 'obesitas-1'
+            elif imt >= 30 and imt < 35:
+                vals['peringatan_interpretasi_imt'] = 'obesitas-2'
+            else:
+                vals['peringatan_interpretasi_imt'] = 'obesitas-2'
+        return super(HospitalPerawat,self).write(vals)
+            
+        
