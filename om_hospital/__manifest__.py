@@ -7,20 +7,23 @@
     'category': 'hospital',
     'website': 'https://www.odoohospi.tech',
     'depends' : [
+        'base',
         'sale',
-        'mail'
+        'mail',
+        'om_kartu_keluarga'
         ],
     'data': [
         "security/ir.model.access.csv",
         "data/code_alasan_datang.xml",
         "data/data.xml",
-        'wizard\create_appointmen_view.xml',
         "views/hospital_view.xml",
         "views/sale_view.xml",
         "views/kids_view.xml",
         "views/gender_view.xml",
         "views/appointmen_view.xml",
         "views/perawat_triase_view.xml",
+        "views/icpc_view.xml",
+        "views/icd_view.xml",
         "views/medik_view.xml",
     ],
     'demo': [],

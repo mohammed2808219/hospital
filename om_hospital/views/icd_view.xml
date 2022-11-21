@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="icd_view_tree" model="ir.ui.view">
+        <field name="name">icd.view.tree</field>
+        <field name="model">icd</field>
+        <field name="arch" type="xml">
+            <tree string="ICD 10" editable="top">
+                <field name="code"></field>
+                <field name="name"></field>
+            </tree>
+        </field>
+    </record>
+
+    <record id="icd_action" model="ir.actions.act_window">
+        <field name="name">Data ICD</field>
+        <field name="res_model">icd</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a new ICD.
+            </p><p>
+                ICD is a list of medical diagnosis codes.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="icd_menu" name="ICD 10" parent="config_menu" action="icd_action" sequence="2"/>
+
+</odoo>

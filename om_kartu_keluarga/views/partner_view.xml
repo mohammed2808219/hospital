@@ -39,6 +39,7 @@
                             <field name="tgl_lahir"></field>
                             <field name="jenis_kelamin"></field>
                             <field name="tempat_lahir"></field>
+                            <field name="keluhan_utama"></field>
                             <field name="related_sts_kawin" attrs="{'invisible':True}"></field>
                             <field name="sts_kawin" options="{'no_open':True,'no_create':True}"></field>
                             <label for="usia_kawin_pertama_tahun" string="usia kawin pertama" attrs="{'invisible':['|',('related_sts_kawin','=',1),('related_sts_kawin','=', 0)]}"/>

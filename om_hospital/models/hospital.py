@@ -1,5 +1,4 @@
 from odoo import api, fields, models, _
-from odoo.addons.om_hospital.models.appointmen import HospitalAppointmen
 class HospitalProfile(models.Model):
     _name = "hospital.manegement"
     _inherit = ["mail.thread", "mail.activity.mixin"]

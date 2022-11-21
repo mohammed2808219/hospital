@@ -1,5 +1,3 @@
-from attr import field
-from traitlets import default
 from odoo import api, fields, models, _
 
 
@@ -63,14 +61,17 @@ class HospitalPerawat(models.Model):
     ghk_makan_sayur = fields.Selection([('tidak', 'Tidak'), ('ya', 'Ya')], string="Makan Sayur (Tinggi Serat) 3 Porsi Setiap Hari ?")
 
 
+    name = fields.Many2one(comodel_name="partner", string="Nama Pasien")
     nama_kk = fields.Many2one(comodel_name="partner", string="Nama KK", domain=[('kepala_keluarga', '=', True)])
     alamat_kk = fields.Char(related="nama_kk.alamat", string="Alamat", readonly=True)
     nomer_kk = fields.Char(related="nama_kk.nik_kepala_keluarga", string="Nomer KK", readonly=True)
     no_hp_kk = fields.Char(related="nama_kk.no_hp", string="No HP", readonly=True)
     email_kk = fields.Char(related="nama_kk.email", string="Email", readonly=True)
-    age = fields.Integer(default='20')
+    nik = fields.Char(related="nama_kk.nik", string="nik")
+    age = fields.Integer()
 
     keluhan_ids = fields.Many2many('alasan.datang', string="Alasan Datang")
+    subjektif_id = fields.Many2one('medik')
 
 
     @api.onchange('tinggi_badan', 'berat_badan')
@@ -98,8 +99,8 @@ class HospitalPerawat(models.Model):
     def _onchange_alergi(self):
         if self.alergi:
             alergi_str = ''
-            if self.alergi_makanan and self.alergi_obat:
-                alergi_str += 'Makanan : ' + self.alergi_makanan + "\n" + 'Obat : ' + self.alergi_obat
+            if self.alergi_makanan or self.alergi_obat:
+                alergi_str += 'Makanan : ' + str(self.alergi_makanan) + "\n" + 'Obat : ' + str(self.alergi_obat)
                 self.peringatan_alergi = alergi_str
 
 
@@ -123,6 +124,14 @@ class HospitalPerawat(models.Model):
         else :
             self.imt = 0
             self.peringatan_interpretasi_imt = ''
+         
+        alergi = vals.get('alergi') or self.alergi   
+        if alergi:
+            alergi_str = ''
+            if  vals.get('alergi_makanan') or  vals.get('alergi_obat'):
+                alergi_str += 'Makanan : ' +  str(vals.get('alergi_makanan')) + "\n" + 'Obat : ' +  str(vals.get('alergi_obat'))
+                vals['peringatan_alergi'] = alergi_str
+                
         return super(HospitalPerawat, self).create(vals)
     
     def write(self,vals):
@@ -144,6 +153,14 @@ class HospitalPerawat(models.Model):
                 vals['peringatan_interpretasi_imt'] = 'obesitas-2'
             else:
                 vals['peringatan_interpretasi_imt'] = 'obesitas-2'
+        # import ipdb; ipdb.set_trace()    
+        alergi = vals.get('alergi') or self.alergi 
+        if alergi:
+            alergi_str = ''
+            if  vals.get('alergi_makanan') or  vals.get('alergi_obat'):
+                alergi_str += 'Makanan : ' +  str(vals.get('alergi_makanan')) + "\n" + 'Obat : ' +  str(vals.get('alergi_obat'))
+                vals['peringatan_alergi'] = alergi_str
+                
         return super(HospitalPerawat,self).write(vals)
             
         

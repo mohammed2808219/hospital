@@ -14,6 +14,7 @@
                                 <field name="keluhan_ids" widget="many2many_tags" style="margin: 5px 5px 5px;" options="{'no_edit':True,'no_create':True, 'no_open' : True}"/>
                                 <field name="keadaan_sakit" style="margin: 5px 5px 5px;"/>
                                 <field name="kesadaran" style="margin: 5px 5px 5px;"/>
+                                <field name="name" style="margin: 5px 5px 5px;"/>
                             </group>
                         <group>
                             <group>
@@ -46,6 +47,10 @@
                                 <field name="alergi_makanan" string="Alergi Makanan" attrs="{'invisible' : [('alergi', '=', False)]}" class="oe_inline" style="margin: 5px 5px 5px;"/>
                                 <field name="alergi_obat" string="Alergi Obat" attrs="{'invisible' : [('alergi', '=', False)]}" class="oe_inline" style="margin: 5px 5px 5px;"/>
                                 <separator colspan='2' string='Anthropometri' style="font-size: 25px; margin-bottom:25px;"/>
+                                <label for="age" string="Age"/>
+                                <div>
+                                    <field name="age" class="oe_inline" style="margin: 5px 5px 5px;"/> tahun
+                                </div>
                                 <label for="tinggi_badan" string="Tinggi Badan"/>
                                 <div>
                                     <field name="tinggi_badan" class="oe_inline" style="margin: 5px 5px 5px;"/> cm
@@ -117,6 +122,7 @@
             <field name="model">hospital.perawat</field>
             <field name="arch" type="xml">
                 <tree string="">
+                    <field name="name"></field>
                     <field name="nama_kk"></field>
                     <field name="nomer_kk"></field>
                     <field name="imt"></field>

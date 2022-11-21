@@ -1,26 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="subjektif_view_form" model="ir.ui.view">
-        <field name="name">subjektif.view.form</field>
-        <field name="model">subjektif</field>
+    <record id="medik_view_tree" model="ir.ui.view">
+        <field name="name">medik.view.tree</field>
+        <field name="model">medik</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="perawat_id"></field>
+                <field name="kasus"></field>
+                <field name="masalah"></field>
+                <field name="icpc_2_id"></field>
+                <field name="icd10_id"></field>
+            </tree>
+        </field>
+    </record>
+
+    <record id="medik_view_form" model="ir.ui.view">
+        <field name="name">medik.view.form</field>
+        <field name="model">medik</field>
         <field name="arch" type="xml">
             <form string="">
                 <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
                     <notebook>
                         <page name="Subjektif" string="Subjektif">
-                            <group>
-                                <field name="perawat_id"/>
-                                <field name="subjektif"/>
-                                <field name="subjektif_dokter"/>
-                                <field name="riwayat_penyakit"/>
-                                <field name="riwayat_personal"/>
-                                <field name="alergi"/>
-                                <field name="riwayat_keluarga"/>
+                           <group>
+                                <group>
+                                    <field name="perawat_id"/>
+                                    <field name="subjektif_dokter"/>
+                                    <field name="riwayat_personal"/>    
+                                </group>
+                                <group>
+                                    <field name="subjektif"/>
+                                    <field name="riwayat_penyakit"/>
+                                </group>
                             </group>
+                            <notebook>
+                                <page string="Alergi">
+                                    <field name="perawat_ids" force_save="1">
+                                        <tree>
+                                            <field name="alergi_makanan" />
+                                            <field name="alergi_obat" />
+                                        </tree>
+                                    </field>
+                                </page>
+                                <page string="Dafter Keluarga &amp; Penyakit">
+                                    <field name="subjektif_partner_ids" force_save="1">
+                                        <tree>
+                                            <field name="partner_id" force_save="1" invisible="1"/>
+                                            <field name="name" />
+                                            <field name="nik" />
+                                            <field name="sts_hubungan" />
+                                            <field name="keluhan_utama" />
+                                        </tree>
+                                    </field>
+                                </page>
+                            </notebook>
                         </page>
                         <page name="Objektif" string="Objektif">
-                                <field name="subjektif"/>
+                            <group>
+                                <field name="objektif"/>
+                            </group>
+                            <group>
+                                <group>
+                                    <field name="kepala"/>
+                                    <field name="kepala_disc" attrs="{'invisible':[('kepala','=',False)]}" string="" placeholder="Descriptions Sakit Kepala"/>
+                                    <field name="leher"/>
+                                    <field name="leher_disc" attrs="{'invisible':[('leher','=',False)]}" string="" placeholder="Descriptions Sakit Leher"/>
+                                    <field name="thorax"/>
+                                    <field name="thorax_disc" attrs="{'invisible':[('thorax','=',False)]}" string="" placeholder="Descriptions Sakit Thorax"/>
+                                    <field name="abdomen"/>
+                                    <field name="abdomen_disc" attrs="{'invisible':[('abdomen','=',False)]}" string="" placeholder="Descriptions Sakit Abdomen"/>
+                                </group>
+                                <group>
+                                    <field name="ekstremitas"/>
+                                    <field name="ekstremitas_disc" attrs="{'invisible':[('ekstremitas','=',False)]}" string="" placeholder="Descriptions Sakit Ekstremitas"/>
+                                    <field name="genitalia"/>
+                                    <field name="genitalia_disc" attrs="{'invisible':[('genitalia','=',False)]}" string="" placeholder="Descriptions Sakit Genitalia"/>
+                                    <field name="lain_lain"/>
+                                    <field name="lain_lain_disc" attrs="{'invisible':[('lain_lain','=',False)]}" string="" placeholder="Descriptions Sakit Lain_lain"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page name="Assesment" string="Assesment">
+                            <group>
+                                <field name="kasus" widget="radio" style="margin: 5px 5px 5px;" options="{'horizontal': true}"/>
+                                <field name="masalah" widget="radio" style="margin: 5px 5px 5px;" options="{'horizontal': true}"/>
+                            </group>
+                            <group>
+                                <separator colspan='2' string='Diagnosis' style="font-size: 25px; margin-bottom:25px;"/>
+                                <group>
+                                    <field name="icpc_2_id" style="margin: 10px 10px 10px;" options="{'no_edit':True,'no_create':True, 'no_open' : True}"></field>
+                                    <field name="icp_icd" style="margin: 10px;"></field>
+                                    <field name="icd10_id" style="margin: 10px 10px 20px;" options="{'no_edit':True,'no_create':True, 'no_open' : True}"></field>
+                                    <field name="aspik_klinis" style="margin: 10px;"></field>
+                                </group>
+                                <group>
+                                    <field name="aspik_personal" ></field>
+                                    <field name="aspik_risiko_internal" ></field>
+                                    <field name="aspik_risiko_eksternal" ></field>
+                                    <field name="derajat_fungsional" ></field>
+                                </group>
+                            </group>
                         </page>
                     </notebook>
                 </sheet>
@@ -28,18 +113,19 @@
         </field>
     </record>
 
-    <record id="subjektif_action" model="ir.actions.act_window">
-        <field name="name">Subjektif</field>
-        <field name="res_model">subjektif</field>
-        <field name="view_mode">form</field>
+
+    <record id="medik_action" model="ir.actions.act_window">
+        <field name="name">Medik</field>
+        <field name="res_model">medik</field>
+        <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Create Your first subjektif!
+                Create Your first medik!
             </p>
         </field>
     </record>
 
-    <menuitem id="hospiatl_medik_root_menu" parent="hospital_root_menu" name="Medik"/>
-    <menuitem id="Subjectif_menu" name="Subjektif" parent="hospiatl_medik_root_menu" action="subjektif_action"/>
+    
+    <menuitem id="hospiatl_medik_root_menu" parent="hospital_root_menu" name="Medik" action="medik_action"/>
 
 </odoo>

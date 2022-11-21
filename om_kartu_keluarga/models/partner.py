@@ -89,9 +89,9 @@ class Partner(models.Model):
     
     kb1=fields.Integer(string="Sudah berapa kali Ibu melahirkan")
     kd_ibukandung=fields.Integer(string="Kode Ibu Kandung")
-    # tgl_lahir=fields.Char(string="Tanggal Lahir")
     related_sts_kawin = fields.Integer(related='sts_kawin.kode', string='Status Perkawinan', store=True)
-    
+    keluhan_utama = fields.Char(string="Keluhan Utama")
+    subjektif_id = fields.Many2one(comodel_name='medik', string='subjektif')
     
     _sql_constraints = [
         ('nik_uniq', 'unique(nik)', 'NIK sudah ada !'),

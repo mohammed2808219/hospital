@@ -32,12 +32,15 @@ class kartu_keluarga(models.Model):
     def onchange_partner_id(self):
             nomor_kepala_keluarga = self.env['partner'].search([('nik_kepala_keluarga','=',self.nik_kepala_keluarga)])
             if nomor_kepala_keluarga:
+                self.partner_ids = False
+                ids = []
                 if self.kepala_keluarga:
                     for id in nomor_kepala_keluarga:
-                        self.partner_ids = [[4, id.id]]
+                        ids.append(id.id)
+                    self.partner_ids = ids
                 else:
-                    self.partner_ids = [[5]]
+                   self.partner_ids = False
             else:
-                self.partner_ids = [[5]]
+                self.partner_ids = False
                 
         

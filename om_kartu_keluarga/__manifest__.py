@@ -6,7 +6,7 @@
     'description': """kartu keluarga application for odoo""",
     'category': 'kartu keluarga',
     'website': 'https://www.odoohospi.tech',
-    'depends': [],
+    'depends': ['base'],
     'data': [
         "security/ir.model.access.csv",
         "data/sequence.xml",
