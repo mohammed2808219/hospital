@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- <record id="role_om_hospital_management" model="ir.module.category">
+        <field name="name">Hospital Management Role</field>
+    </record> -->
+                    <!-- group read  -->    
+    <record id="group_om_hospital_read" model="res.groups">
+        <field name="name">hospital Read</field>
+        <!-- <field name="category_id" ref="role_om_hospital_management"/> -->
+    </record>
+                    <!-- perawat -->
+    <record id="group_access_perawat_read" model="ir.model.access">
+        <field name="model_id" ref="model_hospital_perawat" />
+        <field name="name">hospital perawat read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                    <!-- partner -->
+    <record id="group_access_read_partner" model="ir.model.access">
+        <field name="model_id" ref="model_partner" />
+        <field name="name">partner read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                    <!-- medik -->
+    <record id="group_access_read_medik" model="ir.model.access">
+        <field name="model_id" ref="model_medik" />
+        <field name="name">medik read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                        <!--subjektif partner  -->
+    <record id="group_access_read_subjektif_partner" model="ir.model.access">
+        <field name="model_id" ref="model_subjektif_partner" />
+        <field name="name">subjektif partner read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                        <!-- icpc -->
+    <record id="group_access_read_icpc" model="ir.model.access">
+        <field name="model_id" ref="model_icpc" />
+        <field name="name">icpc read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                        <!-- icd -->
+    <record id="group_access_read_icd" model="ir.model.access">
+        <field name="model_id" ref="model_icd" />
+        <field name="name">icd read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                        <!-- alasan datang -->
+    <record id="group_access_read_alasan_datang" model="ir.model.access">
+        <field name="model_id" ref="model_alasan_datang" />
+        <field name="name">alasan datang read</field>
+        <field name="group_id" ref="group_om_hospital_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+                <!-- group update -->
+    
+    <record id="group_om_hospital_update" model="res.groups">
+        <!-- <field name="category_id" ref="role_om_hospital_management"/> -->
+        <field name="name">hospital Update</field>
+        <field name="implied_ids" eval="[(4, ref('group_om_hospital_read'))]" />
+    </record>
+
+                    <!-- perawat -->
+    <record id="group_access_update_perawat" model="ir.model.access">
+        <field name="model_id" ref="model_hospital_perawat" />
+        <field name="name">hospital perawat update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+                    <!-- partner -->
+    <record id="group_access_update_partner_inherit" model="ir.model.access">
+        <field name="model_id" ref="model_partner" />
+        <field name="name">partner inherit update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+                    <!-- medik -->
+    <record id="group_access_update_medik" model="ir.model.access">
+        <field name="model_id" ref="model_medik" />
+        <field name="name">medik update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+                    <!-- subjektif partner -->
+    <record id="group_access_update_subjektif_partner" model="ir.model.access">
+        <field name="model_id" ref="model_subjektif_partner" />
+        <field name="name">subjektif partner update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+                    <!-- icpc -->
+    <record id="group_access_update_icpc" model="ir.model.access">
+        <field name="model_id" ref="model_icpc" />
+        <field name="name">icpc update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+                    <!-- icd -->
+    <record id="group_access_update_icd" model="ir.model.access">
+        <field name="model_id" ref="model_icd" />
+        <field name="name">icd update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+                    <!-- alasan datang -->
+    <record id="group_access_update_alasan_datang" model="ir.model.access">
+        <field name="model_id" ref="model_alasan_datang" />
+        <field name="name">alasan datang update</field>
+        <field name="group_id" ref="group_om_hospital_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+
+                <!-- group delete -->
+
+    <record id="group_om_hospital_delete" model="res.groups">
+        <!-- <field name="category_id" ref="role_om_hospital_management"/> -->
+        <field name="name">hospital Delete</field>
+        <field name="implied_ids" eval="[(4, ref('group_om_hospital_read'))]" />
+    </record>
+
+                    <!-- perawat -->
+    <record id="group_access_delete_perawat" model="ir.model.access">
+        <field name="model_id" ref="model_hospital_perawat" />
+        <field name="name">hospital perawat delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+                    <!-- partner -->
+    <record id="group_access_delete_partner_inherit" model="ir.model.access">
+        <field name="model_id" ref="model_partner" />
+        <field name="name">partner inherit delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+                    <!-- medik -->
+    <record id="group_access_delete_medik" model="ir.model.access">
+        <field name="model_id" ref="model_medik" />
+        <field name="name">medik delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+                    <!-- subjektif partner -->
+    <record id="group_access_delete_subjektif_partner" model="ir.model.access">
+        <field name="model_id" ref="model_subjektif_partner" />
+        <field name="name">subjektif partner delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+                    <!-- icpc -->
+    <record id="group_access_delete_icpc" model="ir.model.access">
+        <field name="model_id" ref="model_icpc" />
+        <field name="name">icpc delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+                    <!-- icd -->
+    <record id="group_access_delete_icd" model="ir.model.access">
+        <field name="model_id" ref="model_icd" />
+        <field name="name">icd delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+                    <!-- alasan datang -->
+    <record id="group_access_delete_alasan_datang" model="ir.model.access">
+        <field name="model_id" ref="model_alasan_datang" />
+        <field name="name">alasan datang delete</field>
+        <field name="group_id" ref="group_om_hospital_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="menu.group_sys_admin" model="res.groups">
+        <field name="implied_ids" eval="[
+            (4,ref('group_om_hospital_read')),
+            (4,ref('group_om_hospital_update')),
+            (4,ref('group_om_hospital_delete'))]" />
+    </record>
+
+</odoo>

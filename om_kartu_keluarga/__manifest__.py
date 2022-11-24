@@ -6,9 +6,14 @@
     'description': """kartu keluarga application for odoo""",
     'category': 'kartu keluarga',
     'website': 'https://www.odoohospi.tech',
-    'depends': ['base'],
+    'depends': [
+        'base',
+        'menu',
+        'PK21',
+        ],
     'data': [
         "security/ir.model.access.csv",
+        "security/res_groups.xml",
         "data/sequence.xml",
         # "data/config_wilayah/res_country_state.xml",
         # "data/config_wilayah/res_city.xml",
@@ -32,8 +37,5 @@
     ],
     'demo': [],
     'qweb': [],
-    'installable': True,
     'application': True,
-    'auto_install': False,
-    'license': 'LGPL-3',
 }

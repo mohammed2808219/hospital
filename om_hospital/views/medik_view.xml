@@ -126,6 +126,6 @@
     </record>
 
     
-    <menuitem id="hospiatl_medik_root_menu" parent="hospital_root_menu" name="Medik" action="medik_action"/>
+    <menuitem id="hospiatl_medik_root_menu" parent="menu.hospital_root_menu" name="Medik" action="medik_action" sequence="50"/>
 
 </odoo>

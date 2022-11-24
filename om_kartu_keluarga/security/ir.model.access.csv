@@ -1,8 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_partner,access.partner,model_partner,,1,1,1,1
-access_kartu_keluarga,access.kartu.keluarga,model_kartu_keluarga,,1,1,1,1
-access_provinsi_tbl,access.country.state,model_country_state,,1,1,1,1
-access_kota_kab_tbl,access.city,model_city,,1,1,1,1
-access_kecamatan_tbl,access.kecamatan,model_kecamatan,,1,1,1,1
-access_kelurahan_tbl,access.kelurahan,model_kelurahan,,1,1,1,1
+access_partner,access.partner,model_partner,,1,0,0,0
+access_kartu_keluarga,access.kartu.keluarga,model_kartu_keluarga,,1,0,0,0
+access_provinsi_tbl,access.country.state,model_country_state,,1,0,0,0
+access_kota_kab_tbl,access.city,model_city,,1,0,0,0
+access_kecamatan_tbl,access.kecamatan,model_kecamatan,,1,0,0,0
+access_kelurahan_tbl,access.kelurahan,model_kelurahan,,1,0,0,0
 

@@ -1,10 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hospital_management,access.hospital.manegement,model_hospital_manegement,,1,1,1,1
-access_hospital_appointmen,access.hospital.appointmen,model_hospital_appointmen,,1,1,1,1
-access_hospital_perawat,access.hospital.perawat,model_hospital_perawat,,1,1,1,1
-access_alasan_datang,access.alasan.datang,model_alasan_datang,,1,1,1,1
-access_medik,access.medik,model_medik,,1,1,1,1
-access_subjektif_partner,access.subjektif.partner,model_subjektif_partner,,1,1,1,1
-access_icpc,access.icpc,model_icpc,,1,1,1,1
-access_icd,access.icd,model_icd,,1,1,1,1
+access_hospital_perawat,access.hospital.perawat,model_hospital_perawat,,1,0,0,0
+access_alasan_datang,access.alasan.datang,model_alasan_datang,,1,0,0,0
+access_medik,access.medik,model_medik,,1,0,0,0
+access_subjektif_partner,access.subjektif.partner,model_subjektif_partner,,1,0,0,0
+access_icpc,access.icpc,model_icpc,,1,0,0,0
+access_icd,access.icd,model_icd,,1,0,0,0
+access_partner,access.partner,model_partner,,1,0,0,0
 

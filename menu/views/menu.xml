@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!-- menu modul -->
+		<menuitem id="hospital_root_menu" name="hospital"/>
+		<menuitem id="partner_root_menu" name="Pasien" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
+		<menuitem id="pk21_root_menu" name="PK21" sequence="1" groups="PK21.group_pk21_read"/>
+		
+		
+		<!-- menu model -->
+		<menuitem id="menu_config_wilayah" name="Configurations Wilayah" parent="partner_root_menu" sequence="03" />
+		<menuitem id="pk21_sub_menu" name="PK21" parent="pk21_root_menu" sequence="1" />
+		<menuitem id="pk21_KEPENDUDUKAN" name="KEPENDUDUKAN" parent="pk21_sub_menu" sequence="1" />
+		<menuitem id="pk21_KELUARGA_BERENCANA" name="KELUARGA BERENCANA" parent="pk21_sub_menu" sequence="2" />
+		<menuitem id="pk21_PEMBANGUNGAN_KELUARGA" name="LINGKUNGKUNGAN FISIK KELUARGA" parent="pk21_sub_menu" sequence="3" />
+		<menuitem id="config_menu" name="config" parent="hospital_root_menu" sequence="100" />
+	</data>
+</odoo>
+
+<!-- groups="om_hospital.group_om_hospital_read" -->

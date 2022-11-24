@@ -8,19 +8,14 @@
     'website': 'https://www.odoohospi.tech',
     'depends' : [
         'base',
-        'sale',
-        'mail',
+        'menu',
         'om_kartu_keluarga'
         ],
     'data': [
         "security/ir.model.access.csv",
+        "security/res_groups.xml",
         "data/code_alasan_datang.xml",
         "data/data.xml",
-        "views/hospital_view.xml",
-        "views/sale_view.xml",
-        "views/kids_view.xml",
-        "views/gender_view.xml",
-        "views/appointmen_view.xml",
         "views/perawat_triase_view.xml",
         "views/icpc_view.xml",
         "views/icd_view.xml",
@@ -28,8 +23,5 @@
     ],
     'demo': [],
     'qweb': [],
-    'installable': True,
-    'application': True,
-    'auto_install': False,
-    'license': 'LGPL-3',
+    'application': True,    
 }

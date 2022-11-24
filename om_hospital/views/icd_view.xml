@@ -25,6 +25,6 @@
         </field>
     </record>
 
-    <menuitem id="icd_menu" name="ICD 10" parent="config_menu" action="icd_action" sequence="2"/>
+    <menuitem id="icd_menu" name="ICD 10" parent="menu.config_menu" action="icd_action" sequence="2"/>
 
 </odoo>

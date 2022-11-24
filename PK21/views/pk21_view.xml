@@ -15,7 +15,7 @@
     </record>
 
     <record id="pk21_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="help" type="html">
@@ -26,8 +26,9 @@
             </field>
         </field>
     </record>
+
     <record id="pk21_sts_hubungan_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 status hubungan</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'sts_hubungan')]</field>
@@ -40,7 +41,7 @@
         </field>
     </record>
     <record id="pk21_sts_kawin_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 status kawin</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'sts_kawin')]</field>
@@ -53,7 +54,7 @@
         </field>
     </record>
     <record id="pk21_id_pekerjaan_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 status pekerjaan</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'id_pekerjaan')]</field>
@@ -66,7 +67,7 @@
         </field>
     </record>
     <record id="pk21_jns_pendidikan_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 status pendidikan</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'jns_pendidikan')]</field>
@@ -79,7 +80,7 @@
         </field>
     </record>
     <record id="pk21_kb7_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 kb7</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'kb7')]</field>
@@ -93,7 +94,7 @@
     </record>
     
     <record id="pk21_pk19_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk19</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk19')]</field>
@@ -106,7 +107,7 @@
         </field>
     </record>
     <record id="pk21_pk20_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk20</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk20')]</field>
@@ -119,7 +120,7 @@
         </field>
     </record>
     <record id="pk21_pk21_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk21</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk21')]</field>
@@ -132,7 +133,7 @@
         </field>
     </record>
     <record id="pk21_pk22_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk22</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk22')]</field>
@@ -145,7 +146,7 @@
         </field>
     </record>
     <record id="pk21_pk23_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk23</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk23')]</field>
@@ -158,7 +159,7 @@
         </field>
     </record>
     <record id="pk21_pk24_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk24</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk24')]</field>
@@ -171,7 +172,7 @@
         </field>
     </record>
     <record id="pk21_pk27_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">pk21 pk27</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk27')]</field>
@@ -185,7 +186,7 @@
     </record>
 
     <record id="pk21_pk28_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
+        <field name="name">kp21 pk28</field>
         <field name="res_model">pk21</field>
         <field name="view_mode">tree</field>
         <field name="domain">[('value','=', 'pk28')]</field>
@@ -197,144 +198,25 @@
             </field>
         </field>
     </record>
-    
 
-    <record id="pk21_pk19_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
-        <field name="res_model">pk21</field>
-        <field name="view_mode">tree</field>
-        <field name="domain">[('value','=', 'pk19')]</field>
-        <field name="help" type="html">
-            <field name="help" type="html">
-                <p class="oe_view_nocontent_create">
-                    Silahkan generate data PK21 
-                </p>
-            </field>
-        </field>
-    </record>
 
-    <record id="pk21_sub_menu_action" model="ir.actions.act_window">
-        <field name="name">Action Name</field>
-        <field name="res_model">pk21</field>
-    </record>
+    <menuitem id="pk21_sts_hubungan" name="Hubungan dengan kepala keluarga" parent="menu.pk21_KEPENDUDUKAN" action="pk21_sts_hubungan_action" sequence="1" />
 
-    <menuitem
-        id="pk21_root_menu"
-        name="PK21"
-        action="pk21_action"
-        sequence="1"/>
+    <menuitem id="pk21_sts_kawin" name="Status perkawinan" parent="menu.pk21_KEPENDUDUKAN" action="" sequence="2" />
 
-    <menuitem 
-        id="pk21_sub_menu"
-        name="PK21"
-        parent="pk21_root_menu"
-        sequence="1"/>
+    <menuitem id="pk21_id_pekerjaan" name="Status pekerjaan" parent="menu.pk21_KEPENDUDUKAN" action="" sequence="3" />
+
+    <menuitem id="pk21_jns_pendidikan" name="Pendidikan" parent="menu.pk21_KEPENDUDUKAN" action="" sequence="4" />
+
+    <menuitem id="pk21_kb7" name="Jenis alat/obat/cara KB" parent="menu.pk21_KELUARGA_BERENCANA" action="pk21_kb7_action" sequence="1" />
+
+    <menuitem id="pk21_pk19" name="Jenis atap rumah terluas" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk19_action" sequence="2" />
+    <menuitem id="pk21_pk20" name="Jenis dinding rumah terluas" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk20_action" sequence="3" />
+    <menuitem id="pk21_pk21" name="Jenis lantai rumah terluas" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk21_action" sequence="4" />
+    <menuitem id="pk21_pk22" name="Sumber penerangan utama" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk22_action" sequence="5" />
+    <menuitem id="pk21_pk23" name="Sumber air minum utama" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk23_action" sequence="6" />
+    <menuitem id="pk21_pk24" name="Memiliki fasilitas tempat buang air besar" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk24_action" sequence="7" />
+    <menuitem id="pk21_pk27" name="Bahan bakar utama untuk memasak" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk27_action" sequence="7" />
+    <menuitem id="pk21_pk28" name="Kepemilikan rumah/bangunan tempat tinggal" parent="menu.pk21_PEMBANGUNGAN_KELUARGA" action="pk21_pk28_action" sequence="7" />
         
-        <menuitem 
-            id="pk21_KEPENDUDUKAN"
-            name="KEPENDUDUKAN"
-            parent="pk21_sub_menu"
-            sequence="1"/>
-
-            <menuitem 
-                id="pk21_sts_hubungan"
-                name="Hubungan dengan kepala keluarga"
-                parent="pk21_KEPENDUDUKAN"
-                action="pk21_sts_hubungan_action"
-                sequence="1"/>
-
-            <menuitem 
-                id="pk21_sts_kawin"
-                name="Status perkawinan"
-                parent="pk21_KEPENDUDUKAN"
-                action=""
-                sequence="2"/>
-
-            <menuitem 
-                id="pk21_id_pekerjaan"
-                name="Status pekerjaan"
-                parent="pk21_KEPENDUDUKAN"
-                action=""
-                sequence="3"/>
-
-            <menuitem 
-                id="pk21_jns_pendidikan"
-                name="Pendidikan"
-                parent="pk21_KEPENDUDUKAN"
-                action=""
-                sequence="4"/>
-
-        <menuitem 
-            id="pk21_KELUARGA_BERENCANA"
-            name="KELUARGA BERENCANA"
-            parent="pk21_sub_menu"
-            sequence="2"/>
-
-            <menuitem 
-                id="pk21_kb7"
-                name="Jenis alat/obat/cara KB"
-                parent="pk21_KELUARGA_BERENCANA"
-                action="pk21_kb7_action"
-                sequence="1"/>  
-                
-        <menuitem 
-            id="pk21_PEMBANGUNGAN_KELUARGA"
-            name="LINGKUNGKUNGAN FISIK KELUARGA"
-            parent="pk21_sub_menu"
-            sequence="3"/>
-
-            <menuitem 
-                id="pk21_pk19"
-                name="Jenis atap rumah terluas"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk19_action"
-                sequence="2"/>
-            <menuitem 
-                id="pk21_pk20"
-                name="Jenis dinding rumah terluas"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk20_action"
-                sequence="3"/>
-            <menuitem 
-                id="pk21_pk21"
-                name="Jenis lantai rumah terluas"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk21_action"
-                sequence="4"/>
-            <menuitem 
-                id="pk21_pk22"
-                name="Sumber penerangan utama"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk22_action"
-                sequence="5"/>
-            <menuitem 
-                id="pk21_pk23"
-                name="Sumber air minum utama"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk23_action"
-                sequence="6"/>
-            <menuitem 
-                id="pk21_pk24"
-                name="Memiliki fasilitas tempat buang air besar"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk24_action"
-                sequence="7"/>
-            <menuitem 
-                id="pk21_pk27"
-                name="Bahan bakar utama untuk memasak"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk27_action"
-                sequence="7"/>
-            <menuitem 
-                id="pk21_pk28"
-                name="Kepemilikan rumah/bangunan tempat tinggal"
-                parent="pk21_PEMBANGUNGAN_KELUARGA"
-                action="pk21_pk28_action"
-                sequence="7"/>
-        
-    </odoo>
-    
-    <!-- action="" -->
-    <!-- action="" -->
-    <!-- action="" -->
-    <!-- action="" -->
+</odoo>

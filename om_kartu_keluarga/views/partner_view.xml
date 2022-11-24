@@ -133,8 +133,7 @@
         </field>
     </record>
 
-    <menuitem id="partner_root_menu" name="PASIEN"/>
-    <menuitem id="partner_sub_menu" parent="partner_root_menu" action="action_partner_profile" name="Regestrasi Pasien" sequence="01"/>
+    <menuitem id="partner_sub_menu" parent="menu.partner_root_menu" action="action_partner_profile" name="Regestrasi Pasien" sequence="01"/>
 
 
 </odoo>
