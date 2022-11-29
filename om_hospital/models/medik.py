@@ -54,6 +54,11 @@ class Medik(models.Model):
     derajat_fungsional = fields.Text(string='Derajat Fungsional')
     
     
+    #Plan
+    biaya_konsultasi = fields.Selection([('1','Ditagihkan'),('2','Tidak Ditagihkan')], string='Biaya Konsultasi')
+    biaya = fields.Float(string='Biaya')
+    
+    
     @api.model
     def create(self,vals):
         if vals.get('name', _('New')) == _('New'):

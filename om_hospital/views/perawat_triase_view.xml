@@ -142,8 +142,8 @@
             </field>
         </record>
 
-        <menuitem id="perawat_triase_root_menu" parent="menu.hospital_root_menu" name="Perawat"/>
-        <menuitem id="perawat_triase_sub_menu" parent="perawat_triase_root_menu" name="Perawat (Triase)" sequence="1" action="hospital_perawat_triase_action"/>
+        <menuitem id="perawat_triase_root_menu" parent="menu.hospital_root_menu" name="Perawat" groups="om_hospital.group_om_hospital_read"/>
+        <menuitem id="perawat_triase_sub_menu" parent="perawat_triase_root_menu" name="Perawat (Triase)" sequence="1" action="hospital_perawat_triase_action" groups="om_hospital.group_om_hospital_read"/>
 
     </data>
 

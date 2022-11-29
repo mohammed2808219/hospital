@@ -107,6 +107,12 @@
                                 </group>
                             </group>
                         </page>
+                        <page name="plan" string="Plan">
+                            <group>
+                                <field name="biaya_konsultasi" widget="radio" style="margin: 5px 5px 5px;" options="{'horizontal': true}"/>
+                                <field name="biaya" style="margin: 5px 5px 5px;" attrs="{'invisible':[('biaya_konsultasi','in',('1',False))]}" placeholder="Biaya Konsultasi"/>
+                            </group>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
@@ -126,6 +132,7 @@
     </record>
 
     
-    <menuitem id="hospiatl_medik_root_menu" parent="menu.hospital_root_menu" name="Medik" action="medik_action" sequence="50"/>
+    <menuitem id="hospiatl_medik_root_menu" parent="menu.hospital_root_menu" name="Medik" groups="om_hospital.group_om_hospital_read" sequence="50"/>
+    <menuitem id="hospiatl_medik_sub_menu" parent="hospiatl_medik_root_menu" name="Medik" action="medik_action" groups="om_hospital.group_om_hospital_read" sequence="1"/>
 
 </odoo>

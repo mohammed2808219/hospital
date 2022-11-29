@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="obat_view_tree" model="ir.ui.view">
+        <field name="name">obat.view.tree</field>
+        <field name="model">obat</field>
+        <field name="arch" type="xml">
+            <tree string="Configuration Data obat" editable="top">
+                <field name="name" />
+                <field name="kode" />
+                <field name="nama_dagang" />
+                <field name="kdoe_pabrik" />
+                <field name="harga_beli" />
+                <field name="harga_jual" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="obat_action" model="ir.actions.act_window">
+        <field name="name">obat</field>
+        <field name="res_model">obat</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Silahkan generate data Obat 
+                </p>
+            </field>
+        </field>
+    </record>
+    <menuitem id="obat_sub_menu" name="Configuration Obat" action="obat_action" parent="menu.obat_root_menu" groups="obat.group_obat_read" sequence="1" />
+</odoo>

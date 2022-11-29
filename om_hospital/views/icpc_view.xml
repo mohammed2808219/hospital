@@ -26,6 +26,6 @@
         </field>
     </record>
 
-    <menuitem id="icpc_menu" name="ICPC-2" parent="menu.config_menu" action="icpc_action" sequence="1"/>
+    <menuitem id="icpc_menu" name="ICPC-2" parent="menu.config_menu" action="icpc_action" groups="om_hospital.group_om_hospital_read" sequence="1"/>
 
 </odoo>

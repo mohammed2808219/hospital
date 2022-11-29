@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="role_obat" model="ir.module.category">
+        <field name="name">OBAT Role</field>
+    </record>
+    
+                <!-- group read  -->
+    <record id="group_obat_read" model="res.groups">
+        <field name="name">Obat Read</field>
+        <field name="category_id" ref="role_obat"/>
+    </record>
+
+    <record id="group_access_read" model="ir.model.access">
+        <field name="model_id" ref="model_obat" />
+        <field name="name">obat read</field>
+        <field name="group_id" ref="group_obat_read"/>
+        <field name="perm_read">1</field>
+    </record>
+
+            <!-- group update -->
+    
+    <record id="group_obat_update" model="res.groups">
+        <field name="category_id" ref="role_obat"/>
+        <field name="name">Obat Update</field>
+        <field name="implied_ids" eval="[(4, ref('group_obat_read'))]" />
+    </record>
+
+    <record id="group_access_update" model="ir.model.access">
+        <field name="model_id" ref="model_obat" />
+        <field name="name">obat update</field>
+        <field name="group_id" ref="group_obat_update"/>
+        <field name="perm_create">1</field>
+        <field name="perm_write">1</field>
+    </record>
+
+            <!-- group delete -->
+    
+    <record id="group_obat_delete" model="res.groups">
+        <field name="category_id" ref="role_obat"/>
+        <field name="name">Obat Delete</field>
+        <field name="implied_ids" eval="[(4, ref('group_obat_read'))]" />
+    </record>     
+
+    <record id="group_access_delete" model="ir.model.access">
+        <field name="model_id" ref="model_obat" />
+        <field name="name">obat delete</field>
+        <field name="group_id" ref="group_obat_delete"/>
+        <field name="perm_unlink">1</field>
+    </record>
+
+    <record id="menu.group_sys_admin" model="res.groups">
+        <field name="implied_ids" eval="[
+            (4,ref('group_obat_read')),
+            (4,ref('group_obat_update')),
+            (4,ref('group_obat_delete'))]" />
+    </record>
+
+</odoo>

@@ -113,6 +113,6 @@
         </field>
     </record>
 
-    <menuitem id="kartu_keluarga_sub_menu" parent="menu.partner_root_menu" action="action_kartu_keluarga_profile" name="Kartu Keluarga" sequence="02"/>
+    <menuitem id="kartu_keluarga_sub_menu" parent="menu.partner_root_menu" action="action_kartu_keluarga_profile" name="Kartu Keluarga" sequence="02" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
 
 </odoo>

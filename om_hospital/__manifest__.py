@@ -9,7 +9,8 @@
     'depends' : [
         'base',
         'menu',
-        'om_kartu_keluarga'
+        'om_kartu_keluarga',
+        'obat',
         ],
     'data': [
         "security/ir.model.access.csv",

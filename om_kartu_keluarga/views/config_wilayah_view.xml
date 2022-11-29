@@ -138,9 +138,9 @@
     </record>
 
                 <!-- menu -->
-    <menuitem id="menu_provinsi_tbl" name="Configurations Provinsi" parent="menu.menu_config_wilayah" action="action_provinsi_tbl"/>
-    <menuitem id="menu_kota_kab_tbl" name="Configurations Kota/Kabupaten" parent="menu.menu_config_wilayah" action="action_kota_kab_tbl"/>
-    <menuitem id="menu_kecamatan_tbl" name="Configurations Kecamatan" parent="menu.menu_config_wilayah" action="action_kecamatan_tbl"/>
-    <menuitem id="menu_kelurahan_tbl" name="Configurations Kelurahan" parent="menu.menu_config_wilayah" action="action_kelurahan_tbl"/>
+    <menuitem id="menu_provinsi_tbl" name="Configurations Provinsi" parent="menu_config_wilayah" action="action_provinsi_tbl" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
+    <menuitem id="menu_kota_kab_tbl" name="Configurations Kota/Kabupaten" parent="menu_config_wilayah" action="action_kota_kab_tbl" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
+    <menuitem id="menu_kecamatan_tbl" name="Configurations Kecamatan" parent="menu_config_wilayah" action="action_kecamatan_tbl" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
+    <menuitem id="menu_kelurahan_tbl" name="Configurations Kelurahan" parent="menu_config_wilayah" action="action_kelurahan_tbl" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
 
 </odoo>

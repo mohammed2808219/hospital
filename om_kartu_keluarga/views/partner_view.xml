@@ -132,8 +132,8 @@
             </p>
         </field>
     </record>
-
-    <menuitem id="partner_sub_menu" parent="menu.partner_root_menu" action="action_partner_profile" name="Regestrasi Pasien" sequence="01"/>
+    <menuitem id="partner_sub_menu" parent="menu.partner_root_menu" action="action_partner_profile" name="Regestrasi Pasien" sequence="01" groups="om_kartu_keluarga.group_om_kartu_keluarga_read"/>
+    <menuitem id="menu_config_wilayah" name="Configurations Wilayah" parent="menu.partner_root_menu" sequence="03" />
 
 
 </odoo>
