@@ -109,9 +109,15 @@
                         </page>
                         <page name="plan" string="Plan">
                             <group>
-                                <field name="biaya_konsultasi" widget="radio" style="margin: 5px 5px 5px;" options="{'horizontal': true}"/>
+                                <field name="biaya_konsultasi" widget="radio" style="margin: 5px 5px 5px;" options="{'horizontal': true}" />
                                 <field name="biaya" style="margin: 5px 5px 5px;" attrs="{'invisible':[('biaya_konsultasi','in',('1',False))]}" placeholder="Biaya Konsultasi"/>
                             </group>
+                            <notebook>
+                                <page string="Resep">
+                                    <b style="color:black;">Resep Obat : </b><field name="resep_obat" force_save="1" widget="radio" style="margin: 5px 20px 10px;" options="{'horizontal': true}" string="Resep Obat"/>
+                                    <field name="obat_ids" force_save="1" />
+                                </page>
+                            </notebook>
                         </page>
                     </notebook>
                 </sheet>

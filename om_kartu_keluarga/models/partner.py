@@ -118,7 +118,8 @@ class Partner(models.Model):
                     raise ValidationError('Perhatian!\nkepala Keluarga untuk NIK ini sudah ada.')
             
         if not vals.get('provinsi_id'):
-            vals['provinsi_id'] = 40 # 40 adalah id provinsi Lampung
+            provinsi_id = self.env['country.state'].search([('code','=','18')])
+            vals['provinsi_id'] = provinsi_id.id # 40 adalah id provinsi Lampung
         if vals.get('sts_hubungan') == '1':
             vals['kepala_keluarga'] = True
         return super(Partner,self).create(vals)

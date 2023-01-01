@@ -57,6 +57,8 @@ class Medik(models.Model):
     #Plan
     biaya_konsultasi = fields.Selection([('1','Ditagihkan'),('2','Tidak Ditagihkan')], string='Biaya Konsultasi')
     biaya = fields.Float(string='Biaya')
+    obat_ids = fields.Many2many('obat','medik_obat_rel','medik_id','obat_id','Obat')
+    resep_obat = fields.Selection([('1','Beli di Luar'),('2','Resep Berulang')], string='Resep Obat')
     
     
     @api.model
